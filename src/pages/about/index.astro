@@ -6,19 +6,9 @@ const schema = {
   "@type": "Person",
   "name": "Glen Swindell",
   "jobTitle": "Fractional Chief Revenue Officer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "OrangeCore Group",
-    "url": "https://orangecoregroup.com"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Plano",
-    "addressRegion": "TX",
-    "addressCountry": "US"
-  },
-  "description": "Glen Swindell is a fractional CRO and RevOps consultant based in Plano, TX. U.S. Army veteran with 10+ years in revenue leadership, payments, and B2B SaaS.",
-  "knowsAbout": ["Fractional CRO", "RevOps", "HubSpot", "B2B SaaS", "Fintech", "Payments", "Revenue Leadership"]
+  "worksFor": { "@type": "Organization", "name": "OrangeCore Group", "url": "https://orangecoregroup.com" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Plano", "addressRegion": "TX", "addressCountry": "US" },
+  "description": "Glen Swindell is a fractional CRO and RevOps consultant based in Plano, TX. U.S. Army veteran with 10+ years in revenue leadership, payments, and B2B SaaS."
 };
 ---
 
@@ -28,143 +18,322 @@ const schema = {
   schema={schema}
 >
 
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="eyebrow hero-ey">About</div>
-      <h1>Glen Swindell — Fractional CRO & RevOps Consultant, Plano TX</h1>
+  <!-- HERO -->
+  <header class="section page-hero">
+    <div class="wrap about-hero">
+      <div class="about-hero-text">
+        <span class="eyebrow">About — The person you're hiring</span>
+        <h1 class="display about-h1">
+          Hi. I'm Glen.<br>
+          <em class="accent-ital">Let's keep it short.</em>
+        </h1>
+        <p class="lede about-lede">
+          Ten-plus years inside revenue teams across enterprise fintech, global payments,
+          and B2B SaaS. U.S. Army veteran. I built OrangeCore because the consulting
+          industry sells PowerPoint and calls it strategy. You deserve finished work.
+        </p>
+        <div class="about-tags">
+          <span class="tag"><span class="dot"></span>SDVOSB Certified</span>
+          <span class="tag">U.S. Army Veteran</span>
+          <span class="tag">Plano, TX</span>
+          <span class="tag">AI-Augmented Delivery</span>
+        </div>
+      </div>
+      <div class="about-hero-img">
+        <div class="ph" style="aspect-ratio:4/5;width:100%;" role="img" aria-label="Glen Swindell, fractional CRO and RevOps consultant, Plano TX">
+          Glen — primary portrait<br><span style="font-size:10px;">(replace src)</span>
+        </div>
+        <div class="img-caption">
+          <span>Glen, Founder</span>
+          <span>Plano, TX · 2019–</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- LEDGER -->
+  <section style="padding:0 0 96px;">
+    <div class="wrap">
+      <div class="ledger">
+        <div>
+          <div class="k">Years in revenue</div>
+          <div class="v">10<span class="v-sub">+</span></div>
+          <div class="sub">Sales, RevOps, lifecycle, GTM</div>
+        </div>
+        <div>
+          <div class="k">ARR secured</div>
+          <div class="v">$67M<span class="v-sub">+</span></div>
+          <div class="sub">Across SaaS, fintech & payments</div>
+        </div>
+        <div>
+          <div class="k">Avg ARR lift</div>
+          <div class="v">22<span class="v-sub">%</span></div>
+          <div class="sub">Across 10+ delivered engagements</div>
+        </div>
+        <div>
+          <div class="k">Service</div>
+          <div class="v" style="font-size:22px;line-height:1.2;">U.S. Army</div>
+          <div class="sub">SDVOSB Certified · Veteran Owned</div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <hr class="rule" />
+
+  <!-- POV -->
+  <section class="section section-band">
+    <div class="wrap pov-grid">
+      <div class="pov-left">
+        <span class="eyebrow">My take</span>
+        <h2 class="display pov-h2">
+          Three things I believe<br>
+          <em class="accent-ital">about revenue work.</em>
+        </h2>
+      </div>
+      <div class="pov-stack">
+        <div class="pov">
+          <span class="pov-num">01</span>
+          <div>
+            <h3 class="pov-h">Process beats charisma.</h3>
+            <p class="pov-p">The companies I've seen scale cleanly are the ones where the system did the heavy lifting and the humans just executed it. The companies that stalled were almost always relying on one or two heroic individuals. Build the system. Then hire ordinary people to run it.</p>
+          </div>
+        </div>
+        <div class="pov">
+          <span class="pov-num">02</span>
+          <div>
+            <h3 class="pov-h">A clean CRM is a moral position.</h3>
+            <p class="pov-p">If your reps don't trust the data, they won't enter it. If they don't enter it, leadership flies blind. If leadership flies blind, the board hears stories instead of forecasts. Every messy CRM I've ever inherited started with a leader who tolerated bad data because "we'll fix it later." We won't. Fix it now.</p>
+          </div>
+        </div>
+        <div class="pov">
+          <span class="pov-num">03</span>
+          <div>
+            <h3 class="pov-h">Consulting should have an end date.</h3>
+            <p class="pov-p">The traditional model — open-ended retainers, hourly billing, scope creep disguised as "evolving needs" — is structurally misaligned with the client. OrangeCore is built the opposite way: fixed scope, fixed price, fixed end date. Renew if it's working. Walk away if it isn't. Either way, you keep everything we built.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREER TIMELINE -->
   <section class="section">
-    <div class="container">
-
-      <div class="bio-layout fade-in">
-        <div class="bio-text">
-          <p class="bio-lead">Glen Swindell is the founder of OrangeCore Group and the person doing the work — not a firm that farms it out.</p>
-
-          <p>He's a fractional Chief Revenue Officer and RevOps consultant based in Plano, TX, focused on B2B SaaS and fintech companies that have outgrown whatever they put together early on. The work is hands-on: pipeline structure, CRM buildouts, go-to-market alignment, sales playbooks, and the systems that make a sales team actually function.</p>
-
-          <p>Glen spent eight years in the U.S. Army (2010–2018). The discipline that comes out of that — systems thinking, accountability, people-first leadership — carries directly into how revenue operations runs. Processes get documented. Timelines get met. The work gets done.</p>
-
-          <p>The fintech and payments background is where things get specific. Past clients include <strong>Verifone</strong> and <strong>Bread Financial</strong> — both enterprise environments with complex sales cycles, compliance-adjacent procurement, and buyers who don't make decisions on a normal B2B timeline. If your buyers include bank risk committees, enterprise procurement in regulated industries, or anyone who needs a vendor security review before signing, that context matters. Most generalist consultants don't have it.</p>
-
-          <p>OrangeCore exists because most fractional consulting is designed to be open-ended. Hourly billing. Scope that drifts. Engagements that never quite finish. The productized approach here is intentional: flat fees, defined deliverables, defined timelines. You know exactly what you're getting before anything starts.</p>
-
-          <p>Currently in delivery: a $15K HubSpot buildout for Sunset Pool Care — full CRM setup, pipeline configuration, and workflow automation for a service business scaling its sales operation. That's the kind of work that ends up on the deliverables list, not a case study three years later.</p>
-
-          <p>OrangeCore is SDVOSB certified (Service-Disabled Veteran-Owned Small Business). For companies working within federal procurement or set-aside contract requirements, that certification is relevant. For everyone else, it's just part of the background.</p>
-
-          <p>Glen also serves on the board of CASA of Denton County — an organization that recruits and trains volunteers to advocate for children in the foster care system. If you're in the DFW area and want to support that work, <a href="https://www.casadentonco.org" target="_blank" rel="noopener">here's the link</a>.</p>
-
-          <p>Based in Plano, TX. Serving clients across DFW and nationally via remote.</p>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Selected work</span>
+        <h2 class="display sec-h2">
+          A career, in numbers<br>
+          <em class="accent-ital">you can verify.</em>
+        </h2>
+      </div>
+      <div class="tl">
+        <div class="tl-row">
+          <div class="tl-when">2025 →</div>
+          <div class="tl-what">
+            <h4>OrangeCore Group · Founder & Fractional CRO</h4>
+            <p>Productized fractional CRO & RevOps for B2B SaaS, fintech, and payments companies. Three tiers, fixed pricing, AI-augmented delivery. 10+ engagements delivered.</p>
+          </div>
+          <div class="tl-num">10<span class="tl-sub">+ engagements</span></div>
         </div>
-
-        <div class="bio-sidebar">
-          <div class="headshot-placeholder" role="img" aria-label="Glen Swindell, fractional CRO and RevOps consultant, Plano TX">
-            <span class="headshot-initials">GS</span>
-            <p class="headshot-note">Photo coming soon</p>
+        <div class="tl-row">
+          <div class="tl-when">2025 — 2026</div>
+          <div class="tl-what">
+            <h4>Global SaaS & Telematics · Chief Revenue Officer</h4>
+            <p>Full commercial P&L ownership across a $50M+ global operation. Consolidated multi-channel revenue org — direct sales, channel, CS, and marketing — under a single strategy for the first time.</p>
           </div>
-
-          <div class="sidebar-facts">
-            <div class="fact-item">
-              <p class="fact-label">Location</p>
-              <p class="fact-val">Plano, TX · DFW</p>
-            </div>
-            <div class="fact-item">
-              <p class="fact-label">Focus</p>
-              <p class="fact-val">B2B SaaS, Fintech, Payments</p>
-            </div>
-            <div class="fact-item">
-              <p class="fact-label">Experience</p>
-              <p class="fact-val">10+ years revenue leadership</p>
-            </div>
-            <div class="fact-item">
-              <p class="fact-label">Military</p>
-              <p class="fact-val">U.S. Army 2010–2018</p>
-            </div>
-            <div class="fact-item">
-              <p class="fact-label">Certification</p>
-              <p class="fact-val">SDVOSB Certified</p>
-            </div>
-            <div class="fact-item">
-              <p class="fact-label">CRMs</p>
-              <p class="fact-val">HubSpot · Salesforce · Pipedrive</p>
-            </div>
+          <div class="tl-num">$50M<span class="tl-sub">+ P&L</span></div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-when">2022 — 2024</div>
+          <div class="tl-what">
+            <h4>Global Payments Platform · VP Americas eCommerce</h4>
+            <p>Built the team from 2 CSMs to 9 people. Closed the first new deal in under 60 days ending an 18-month drought. 14% YoY revenue growth, 27% client retention improvement.</p>
           </div>
-
-          <div class="sidebar-clients">
-            <p class="fact-label">Past clients include</p>
-            <p class="client-name">Verifone</p>
-            <p class="client-name">Bread Financial</p>
-            <p class="client-name">Sunset Pool Care</p>
+          <div class="tl-num">14%<span class="tl-sub">YoY growth</span></div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-when">2021 — 2022</div>
+          <div class="tl-what">
+            <h4>Enterprise Fintech · Director, Enterprise Sales</h4>
+            <p>Built and led a 15-person sales organization selling BNPL, private label credit, and SaaS-enabled lending solutions. $67M ARR secured across enterprise clients. 112% YoY target exceeded.</p>
           </div>
-
-          <div class="sidebar-badges">
-            <span class="badge">SDVOSB Certified</span>
-            <span class="badge">Veteran Owned</span>
-            <span class="badge">AI-Augmented</span>
+          <div class="tl-num">$67M<span class="tl-sub">ARR</span></div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-when">2018 — 2020</div>
+          <div class="tl-what">
+            <h4>Government Finance SaaS · Regional Sales Manager</h4>
+            <p>Built the regional revenue operation from near-zero. Designed GTM strategy targeting municipalities, counties, and utility districts. Grew region to $7M+ annual revenue in two years.</p>
           </div>
+          <div class="tl-num">600%<span class="tl-sub">growth</span></div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-when">2010 — 2018</div>
+          <div class="tl-what">
+            <h4>U.S. Army</h4>
+            <p>Eight years of service. Discipline, systems thinking, and people-first leadership — these carry directly into how revenue operations runs. Honorably discharged. SDVOSB certified.</p>
+          </div>
+          <div class="tl-num" style="font-family:var(--serif);font-size:22px;line-height:1.2;">Veteran</div>
         </div>
       </div>
-
-      <div class="why-section fade-in">
-        <div class="section-header">
-          <p class="eyebrow">Why OrangeCore</p>
-          <h2>The honest version of why this firm exists.</h2>
-        </div>
-        <div class="why-grid">
-          <div class="why-item">
-            <h3>Generalists are everywhere.</h3>
-            <p>Most fractional consultants will work with any company in any industry. That breadth is also a ceiling — they can give you advice, but not the kind of advice that comes from actually knowing how interchange rates affect your sales cycle or how enterprise financial services procurement works.</p>
-          </div>
-          <div class="why-item">
-            <h3>Open-ended engagements don't serve anyone well.</h3>
-            <p>The hourly billing model creates the wrong incentives. When there's no defined endpoint, projects drift. Clients get comfortable with "progress." The consultant stays engaged longer than they should. OrangeCore is built around the opposite: defined scope, defined deliverables, defined end.</p>
-          </div>
-          <div class="why-item">
-            <h3>AI changes what's possible at this price point.</h3>
-            <p>Every engagement is AI-augmented. That's not a sales line — it's the reason a two-person firm can produce the quality and volume of work that would otherwise require a team. Faster delivery, more thorough documentation, better analysis. The thinking is still human. The output is more consistent.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-cta-banner fade-in">
-        <p class="eyebrow">Based in Plano, TX · Serving DFW and clients nationwide</p>
-        <h2>Want to work together?</h2>
-        <p>Book a 30-minute discovery call. We'll figure out if there's a fit — and if there isn't, you'll hear that clearly too.</p>
-        <a href="/contact/" class="btn-primary">Book a discovery call</a>
-      </div>
-
     </div>
   </section>
+
+  <hr class="rule" />
+
+  <!-- WHY ORANGECORE -->
+  <section class="section section-dark">
+    <div class="wrap">
+      <span class="eyebrow">Why this exists</span>
+      <h2 class="display why-h2">
+        The honest version of<br>
+        <em class="accent-ital">why OrangeCore exists.</em>
+      </h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3 class="why-h">Generalists are everywhere.</h3>
+          <p class="why-p">Most fractional consultants will work with any company in any industry. That breadth is also a ceiling — they can give advice, but not the kind that comes from actually knowing how interchange rates affect your sales cycle or how enterprise financial services procurement works.</p>
+        </div>
+        <div class="why-item">
+          <h3 class="why-h">Open-ended engagements don't serve anyone well.</h3>
+          <p class="why-p">The hourly billing model creates the wrong incentives. When there's no defined endpoint, projects drift. Clients get comfortable with "progress." OrangeCore is built around the opposite: defined scope, defined deliverables, defined end.</p>
+        </div>
+        <div class="why-item">
+          <h3 class="why-h">AI changes what's possible at this price point.</h3>
+          <p class="why-p">Every engagement is AI-augmented. Faster delivery, more thorough documentation, better analysis. The thinking is still human. The output is more consistent — which is the reason a one-person firm can produce what would otherwise require a team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="section">
+    <div class="wrap">
+      <div class="about-cta">
+        <p class="eyebrow" style="margin-bottom:14px;">Based in Plano, TX · Serving DFW and clients nationwide</p>
+        <h2 class="display about-cta-h2">
+          Want to work together?
+        </h2>
+        <p class="lede" style="margin-top:20px;max-width:52ch;color:var(--ink-2);">
+          Book a 30-minute discovery call. We'll figure out if there's a fit — and if there isn't, you'll hear that clearly.
+        </p>
+        <div style="display:flex;gap:12px;margin-top:32px;flex-wrap:wrap;">
+          <a href="/contact/" class="btn btn-primary">Book a discovery call <span class="arr">→</span></a>
+          <a href="/services/" class="btn btn-ghost">See services & pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </Base>
 
 <style>
-.hero{background:var(--charcoal);padding:4rem 0 3rem;text-align:center;}
-.hero-ey{color:var(--orange);border:1px solid rgba(232,97,10,0.4);padding:4px 14px;border-radius:2px;}
-.hero h1{font-size:clamp(1.6rem,4vw,2.6rem);font-weight:700;color:#fff;line-height:1.2;letter-spacing:-0.03em;max-width:700px;margin:1rem auto 0;}
-.bio-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;margin-bottom:5rem;align-items:start;}
-.bio-text p{font-size:15.5px;line-height:1.8;color:var(--charcoal);margin-bottom:1.25rem;}
-.bio-text p:last-child{margin-bottom:0;}
-.bio-lead{font-size:18px !important;font-weight:500;color:var(--charcoal) !important;}
-.bio-text a{color:var(--orange);text-decoration:underline;}
-.bio-text strong{font-weight:600;}
-.headshot-placeholder{background:var(--warm-gray);border:1px solid var(--border);border-radius:8px;aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:1.5rem;}
-.headshot-initials{font-family:var(--font-serif);font-size:3rem;font-weight:700;color:var(--mid-gray);}
-.headshot-note{font-size:12px;color:var(--mid-gray);margin-top:0.5rem;}
-.sidebar-facts{border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:1.25rem;}
-.fact-item{padding:0.75rem 1rem;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;}
-.fact-item:last-child{border-bottom:none;}
-.fact-label{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--mid-gray);}
-.fact-val{font-size:13px;color:var(--charcoal);font-weight:400;}
-.sidebar-clients{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1rem;margin-bottom:1.25rem;}
-.client-name{font-family:var(--font-serif);font-size:15px;font-weight:500;color:var(--charcoal);padding:4px 0;}
-.sidebar-badges{display:flex;flex-direction:column;gap:0.4rem;}
-.badge{font-size:10px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;border:1px solid rgba(232,97,10,0.4);color:var(--orange);padding:4px 10px;border-radius:2px;text-align:center;}
-.why-section{margin-bottom:4rem;}
-.why-section h2{font-size:clamp(1.5rem,3vw,2rem);margin:0.5rem 0 2.5rem;}
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem 3rem;}
-.why-item h3{font-family:var(--font-serif);font-size:1.1rem;font-weight:700;color:var(--charcoal);margin-bottom:0.5rem;}
-.why-item p{font-size:13.5px;color:var(--mid-gray);line-height:1.65;}
-@media(max-width:768px){.bio-layout{grid-template-columns:1fr;}.bio-sidebar{order:-1;}.why-grid{grid-template-columns:1fr;}}
+  :root {
+    --paper:      #F4EFE7;
+    --paper-2:    #EBE4D7;
+    --paper-3:    #E2D9C8;
+    --ink:        #1A1714;
+    --ink-2:      #3A332C;
+    --ink-3:      #6B6258;
+    --rule:       #C9BFAD;
+    --rule-soft:  #D9D0BE;
+    --accent:     #C2511A;
+    --serif:      'Source Serif 4', Georgia, serif;
+    --sans:       'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
+    --mono:       'JetBrains Mono', monospace;
+  }
+  :global(body) { background:var(--paper) !important; color:var(--ink) !important; font-family:var(--sans) !important; }
+
+  .wrap { max-width:1240px; margin:0 auto; padding:0 32px; }
+  .rule { height:1px; background:var(--rule); border:0; margin:0; }
+  .section { padding:96px 0; }
+  .section-band { background:var(--paper-2); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+  .section-dark { background:var(--ink); color:var(--paper); }
+  .section-dark .eyebrow { color:#B7AC9C; }
+  .section-dark .display { color:var(--paper); }
+
+  .display { font-family:var(--serif); font-weight:400; letter-spacing:-0.022em; line-height:0.98; color:var(--ink); }
+  .accent-ital { font-style:italic; color:var(--accent); font-family:var(--serif); }
+  .lede { font-family:var(--serif); font-size:21px; line-height:1.45; color:var(--ink-2); letter-spacing:-0.005em; }
+  .eyebrow { font-family:var(--mono); font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-3); }
+
+  .btn { display:inline-flex; align-items:center; gap:10px; padding:13px 20px; border-radius:999px; font-size:14.5px; font-weight:500; border:1px solid transparent; cursor:pointer; transition:all .15s; white-space:nowrap; text-decoration:none; font-family:var(--sans); }
+  .btn-primary { background:var(--ink); color:var(--paper); }
+  .btn-primary:hover { background:#000; }
+  .btn-ghost { background:transparent; color:var(--ink); border-color:var(--ink); }
+  .btn-ghost:hover { background:var(--ink); color:var(--paper); }
+  .arr { display:inline-block; transition:transform .2s; }
+  .btn:hover .arr { transform:translateX(3px); }
+
+  .tag { display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border:1px solid var(--rule); border-radius:999px; font-family:var(--mono); font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-2); }
+  .dot { width:6px; height:6px; border-radius:50%; background:var(--accent); flex-shrink:0; }
+
+  .ph { background:repeating-linear-gradient(135deg, rgba(26,23,20,0.05) 0 2px, transparent 2px 14px), var(--paper-3); border:1px solid var(--rule); display:grid; place-items:center; color:var(--ink-3); font-family:var(--mono); font-size:12px; letter-spacing:0.1em; text-transform:uppercase; text-align:center; padding:16px; }
+
+  /* hero */
+  .page-hero { padding-top:64px; padding-bottom:96px; }
+  .about-hero { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+  .about-h1 { font-size:clamp(56px,7vw,112px); letter-spacing:-0.025em; line-height:0.95; margin-top:24px; }
+  .about-lede { margin-top:32px; max-width:56ch; }
+  .about-tags { display:flex; gap:8px; margin-top:28px; flex-wrap:wrap; }
+  .img-caption { margin-top:14px; padding-top:12px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; font-family:var(--mono); font-size:11.5px; letter-spacing:0.04em; color:var(--ink-3); }
+
+  /* ledger */
+  .ledger { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+  .ledger > div { padding:28px 24px; border-right:1px solid var(--rule); }
+  .ledger > div:last-child { border-right:none; }
+  .k { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); margin-bottom:12px; }
+  .v { font-family:var(--serif); font-size:36px; letter-spacing:-0.02em; line-height:1; color:var(--ink); }
+  .v-sub { font-size:22px; color:var(--ink-3); }
+  .sub { font-size:13px; color:var(--ink-3); margin-top:8px; }
+
+  /* pov */
+  .pov-grid { display:grid; grid-template-columns:1fr 1.6fr; gap:80px; align-items:start; }
+  .pov-h2 { font-size:clamp(38px,4.6vw,64px); letter-spacing:-0.02em; line-height:1.02; margin-top:14px; }
+  .pov-stack { display:flex; flex-direction:column; gap:0; }
+  .pov { display:flex; gap:24px; padding:32px 0; border-bottom:1px solid var(--rule); align-items:flex-start; }
+  .pov:last-child { border-bottom:none; }
+  .pov-num { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); flex-shrink:0; min-width:28px; padding-top:4px; }
+  .pov-h { font-family:var(--serif); font-size:20px; letter-spacing:-0.01em; color:var(--ink); margin-bottom:10px; }
+  .pov-p { font-size:15px; color:var(--ink-2); line-height:1.65; }
+
+  /* timeline */
+  .sec-head { margin-bottom:56px; }
+  .sec-h2 { font-size:clamp(38px,4.6vw,64px); letter-spacing:-0.02em; line-height:1.02; margin-top:14px; }
+  .tl { display:flex; flex-direction:column; border-top:1px solid var(--rule); }
+  .tl-row { display:grid; grid-template-columns:140px 1fr auto; gap:32px; padding:28px 0; border-bottom:1px solid var(--rule); align-items:start; }
+  .tl-row:last-child { border-bottom:none; }
+  .tl-when { font-family:var(--mono); font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); padding-top:3px; }
+  .tl-what h4 { font-family:var(--serif); font-size:18px; letter-spacing:-0.01em; color:var(--ink); margin-bottom:6px; }
+  .tl-what p { font-size:14px; color:var(--ink-2); line-height:1.6; }
+  .tl-num { font-family:var(--serif); font-size:28px; letter-spacing:-0.02em; color:var(--accent); text-align:right; white-space:nowrap; }
+  .tl-sub { display:block; font-family:var(--mono); font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); text-align:right; margin-top:2px; }
+
+  /* why */
+  .why-h2 { font-size:clamp(38px,4.6vw,64px); letter-spacing:-0.02em; line-height:1.02; margin:14px 0 56px; color:var(--paper); }
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem 3rem; }
+  .why-h { font-family:var(--serif); font-size:20px; letter-spacing:-0.01em; color:var(--paper); margin-bottom:10px; }
+  .why-p { font-size:14.5px; color:#B7AC9C; line-height:1.65; }
+
+  /* about cta */
+  .about-cta { max-width:760px; }
+  .about-cta-h2 { font-size:clamp(38px,5vw,72px); letter-spacing:-0.025em; line-height:0.98; margin-top:14px; }
+
+  @media (max-width:1000px) {
+    .about-hero { grid-template-columns:1fr; gap:48px; }
+    .about-hero-img { order:-1; }
+    .pov-grid { grid-template-columns:1fr; gap:48px; }
+    .ledger { grid-template-columns:1fr 1fr; }
+    .ledger > div:nth-child(2) { border-right:none; }
+    .ledger > div:nth-child(1), .ledger > div:nth-child(2) { border-bottom:1px solid var(--rule); }
+    .why-grid { grid-template-columns:1fr; gap:2rem; }
+    .tl-row { grid-template-columns:100px 1fr; }
+    .tl-num { display:none; }
+  }
+  @media (max-width:640px) {
+    .wrap { padding:0 20px; }
+    .section { padding:64px 0; }
+    .tl-row { grid-template-columns:1fr; gap:8px; }
+  }
 </style>
