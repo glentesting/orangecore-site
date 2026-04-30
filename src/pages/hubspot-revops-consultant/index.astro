@@ -1,0 +1,236 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "HubSpot RevOps Consulting",
+  "provider": { "@type": "Organization", "name": "OrangeCore Group" },
+  "areaServed": ["Dallas TX", "Plano TX", "DFW", "United States"],
+  "description": "HubSpot CRM buildouts, pipeline configuration, workflow automation, and data cleanup for B2B SaaS and fintech teams."
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How long does a HubSpot buildout take?", "acceptedAnswer": { "@type": "Answer", "text": "A full Build engagement runs 3–4 weeks. Foundation audits deliver in 10 business days. Timeline depends on the state of your existing data and how much cleanup is needed before building." } },
+    { "@type": "Question", "name": "What if we're migrating from Salesforce?", "acceptedAnswer": { "@type": "Answer", "text": "Migrations are handled as part of the Build engagement or as a standalone add-on ($4,500). This includes data mapping, import, custom property recreation, and workflow rebuilds." } },
+    { "@type": "Question", "name": "Do you train the team after the buildout?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every Build engagement includes a handoff session and documentation. The 30-day post-delivery support window is specifically for questions, tweaks, and making sure the team is actually using what was built." } }
+  ]
+};
+---
+
+<Base
+  title="HubSpot RevOps Consultant | CRM Buildout & Pipeline Setup | OrangeCore Group"
+  description="Expert HubSpot RevOps consulting — full CRM buildouts, pipeline configuration, workflow automation, and data cleanup for B2B SaaS and fintech teams. Based in DFW."
+  schema={schema}
+>
+
+  <section class="hero">
+    <div class="hc1"></div><div class="hc2"></div>
+    <div class="container hero-inner">
+      <div class="eyebrow hero-ey">HubSpot RevOps Consulting · DFW & Remote</div>
+      <h1>HubSpot RevOps Consulting — Buildouts, Pipeline Setup & CRM Cleanup</h1>
+      <p class="hero-sub">Most HubSpot setups look like they were built in a hurry and never revisited. Bad data, broken workflows, pipelines nobody trusts. We fix that — and build it in a way your team will actually use.</p>
+      <a href="/contact/" class="btn-primary">Book a discovery call</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="two-col fade-in">
+        <div>
+          <p class="eyebrow">What a proper HubSpot buildout includes</p>
+          <h2>More than just turning it on.</h2>
+          <p class="body-lg">A lot of companies have HubSpot. Very few have it set up in a way that reflects how their sales team actually works. Here's what a real buildout covers — not a checklist, actual work:</p>
+          <ul class="check-list" style="margin-top:1.5rem;">
+            <li>Custom properties configured to match your real deal data</li>
+            <li>Pipeline stages with defined entry and exit criteria — not guesswork</li>
+            <li>Workflow automation that handles the repetitive stuff automatically</li>
+            <li>Lead scoring built around your actual ICP, not HubSpot's defaults</li>
+            <li>Reporting dashboards showing the metrics leadership actually needs</li>
+            <li>Marketing-to-sales handoff configured and documented</li>
+            <li>Data cleanup — the old contacts, duplicate records, garbage fields</li>
+          </ul>
+          <p style="margin-top:1.5rem;font-size:14px;color:var(--mid-gray);line-height:1.7;">Every buildout is AI-augmented. That means the audit moves faster, documentation is more complete, and the gap analysis catches things that a manual review would miss. You get more thorough work in less time.</p>
+        </div>
+        <div class="feature-card">
+          <p class="eyebrow" style="margin-bottom:1rem;">Common problems we fix</p>
+          <div class="problem-list">
+            <div class="problem-item">
+              <span class="problem-icon">✗</span>
+              <div>
+                <p class="problem-title">Bad data nobody trusts</p>
+                <p class="problem-desc">Reps stopped logging activity because the CRM doesn't reflect reality. We clean it up and set up hygiene rules that keep it clean going forward.</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <span class="problem-icon">✗</span>
+              <div>
+                <p class="problem-title">No real pipeline structure</p>
+                <p class="problem-desc">Pipeline stages that were created in a rush and never updated. Deals sit in "Proposal Sent" for six months. We fix the stage definitions and the process behind them.</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <span class="problem-icon">✗</span>
+              <div>
+                <p class="problem-title">Missing or broken workflows</p>
+                <p class="problem-desc">Manual tasks that should be automated, automations that fire at the wrong time, sequences that go nowhere. We audit all of it and rebuild what matters.</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <span class="problem-icon">✗</span>
+              <div>
+                <p class="problem-title">Zero useful reporting</p>
+                <p class="problem-desc">Dashboards that technically exist but don't answer the questions leadership is actually asking. We build reports that connect to real revenue decisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-section fade-in">
+        <div class="section-header">
+          <p class="eyebrow">How it works</p>
+          <h2>The process, start to finish.</h2>
+          <p>No surprises, no scope creep. Here's exactly how a HubSpot RevOps engagement runs.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Intake & Discovery</h3>
+              <p>Day one. We go through your current HubSpot setup, your sales process, your data, and where things are breaking down. This isn't open-ended — it's structured, and it typically takes one working session.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Audit & Gap Analysis</h3>
+              <p>We document everything that's broken, missing, or misaligned — and prioritize it. You'll know exactly what the problems are and why they matter before anything gets built.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Build</h3>
+              <p>This is the actual work. CRM reconfiguration, pipeline setup, workflow automation, property cleanup, dashboard creation. Built to your specific sales motion, not a template.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">04</span>
+            <div>
+              <h3>Handoff & Documentation</h3>
+              <p>Everything is documented. You get a full walkthrough of what was built and why, plus documentation your team can reference. Nothing lives only in someone's head.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">05</span>
+            <div>
+              <h3>30-Day Support</h3>
+              <p>Build engagements include 30 days of Slack access post-delivery. Questions, tweaks, second opinions — we stay engaged until the team is actually using it confidently.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proof-section fade-in">
+        <p class="eyebrow">Proof of delivery</p>
+        <h2>Currently in delivery: $15K HubSpot buildout for Sunset Pool Care.</h2>
+        <p>This is a live engagement — full CRM buildout, pipeline configuration, and workflow automation for a service business scaling its sales operation. The kind of work that shows up in the deliverable list above, not in a case study three years later.</p>
+        <p style="margin-top:1rem;font-size:14px;color:var(--mid-gray);">Past clients include Verifone and Bread Financial — both enterprise environments with complex sales cycles and compliance-adjacent procurement. The HubSpot work in those contexts is different from a startup build. If your environment is complicated, that's exactly the kind of work we're built for.</p>
+      </div>
+
+      <div class="pricing-cta fade-in">
+        <div>
+          <p class="eyebrow">Pricing</p>
+          <h2>HubSpot RevOps starts at $5,500.</h2>
+          <p>Foundation audit is $5,500 and delivers in 10 business days. Full Build is $14,500 and runs 3–4 weeks. Both are flat-fee — no hourly billing, no budget surprises.</p>
+          <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="/services/" class="btn-primary">See full pricing</a>
+            <a href="/contact/" class="btn-outline">Book a discovery call</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-section fade-in">
+        <div class="section-header">
+          <p class="eyebrow">Common questions</p>
+          <h2>HubSpot questions we hear a lot.</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <p class="faq-q">How long does a HubSpot buildout take?</p>
+            <p class="faq-a">A full Build runs 3–4 weeks. Foundation audits deliver in 10 business days. Timeline depends on how much cleanup is needed before building starts.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">What if we're migrating from Salesforce?</p>
+            <p class="faq-a">Migrations are handled as part of the Build engagement or as a standalone add-on ($4,500). Data mapping, import, custom property recreation, and workflow rebuilds all included.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">Do you train the team after the buildout?</p>
+            <p class="faq-a">Yes. Every Build includes a handoff session and documentation. The 30-day post-delivery support window is specifically for questions, tweaks, and making sure the team is actually using what was built.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">We have HubSpot already — can you just fix what's broken?</p>
+            <p class="faq-a">That's actually more common than a greenfield build. Start with Foundation — it identifies exactly what's broken and gives you a prioritized fix list. Then you decide if you want to handle it yourself or bring us in to do it.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">Do you work with HubSpot for SaaS companies specifically?</p>
+            <p class="faq-a">Yes. SaaS and fintech are the primary verticals — which means familiarity with product-led growth motions, trial conversion tracking, expansion revenue, and the HubSpot configurations that support them.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">Are you a HubSpot partner or certified?</p>
+            <p class="faq-a">The work speaks for itself — but yes, there's HubSpot certification and hands-on experience across Sales Hub, Marketing Hub, and Operations Hub. Including a live $15K buildout currently in delivery.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-cta-banner fade-in">
+        <p class="eyebrow">Based in DFW · Serving clients nationwide</p>
+        <h2>Ready to actually fix your HubSpot?</h2>
+        <p>30 minutes. No pitch, no pressure. We'll look at where things are and tell you honestly what it would take to get them right.</p>
+        <a href="/contact/" class="btn-primary">Book a discovery call</a>
+      </div>
+
+    </div>
+  </section>
+</Base>
+
+<style>
+.hero{background:var(--charcoal);padding:5rem 0 4rem;position:relative;overflow:hidden;text-align:center;}
+.hc1,.hc2{position:absolute;border-radius:50%;background:var(--orange);pointer-events:none;}
+.hc1{width:300px;height:300px;top:-60px;right:-60px;opacity:0.07;}
+.hc2{width:200px;height:200px;bottom:-60px;left:-40px;opacity:0.04;}
+.hero-inner{position:relative;z-index:1;}
+.hero-ey{color:var(--orange);border:1px solid rgba(232,97,10,0.4);padding:4px 14px;border-radius:2px;}
+.hero h1{font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;color:#fff;line-height:1.15;letter-spacing:-0.03em;max-width:760px;margin:1rem auto 1.25rem;}
+.hero-sub{font-size:17px;color:#9A9590;max-width:580px;margin:0 auto 2.5rem;font-weight:300;line-height:1.7;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-bottom:5rem;align-items:start;}
+.body-lg{font-size:15px;color:var(--mid-gray);line-height:1.7;margin-bottom:0.5rem;}
+.two-col h2{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem;}
+.feature-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2rem;}
+.problem-list{display:flex;flex-direction:column;gap:1.5rem;}
+.problem-item{display:flex;gap:1rem;align-items:flex-start;}
+.problem-icon{font-size:16px;color:#C55050;flex-shrink:0;margin-top:2px;}
+.problem-title{font-size:14px;font-weight:500;color:var(--charcoal);margin-bottom:4px;}
+.problem-desc{font-size:13px;color:var(--mid-gray);line-height:1.55;}
+.process-section{margin-bottom:5rem;}
+.process-steps{display:flex;flex-direction:column;gap:0;margin-top:2rem;}
+.process-step{display:flex;gap:2rem;align-items:flex-start;padding:1.75rem 0;border-bottom:1px solid var(--border);}
+.process-step:last-child{border-bottom:none;}
+.step-num{font-family:var(--font-serif);font-size:2rem;font-weight:700;color:var(--orange);opacity:0.4;flex-shrink:0;line-height:1;min-width:48px;}
+.process-step h3{font-family:var(--font-serif);font-size:1.1rem;font-weight:700;color:var(--charcoal);margin-bottom:0.4rem;}
+.process-step p{font-size:14px;color:var(--mid-gray);line-height:1.65;}
+.proof-section{background:var(--orange-light);border:1px solid var(--orange-mid);border-radius:8px;padding:2.5rem;margin-bottom:4rem;}
+.proof-section h2{font-size:clamp(1.3rem,2.5vw,1.7rem);margin:0.5rem 0 1rem;}
+.proof-section p{font-size:14.5px;color:var(--charcoal);line-height:1.7;}
+.pricing-cta{background:var(--charcoal);border-radius:8px;padding:2.5rem;margin-bottom:4rem;}
+.pricing-cta .eyebrow{color:var(--orange);}
+.pricing-cta h2{color:#fff;font-size:clamp(1.3rem,2.5vw,1.7rem);margin:0.5rem 0 1rem;}
+.pricing-cta p{font-size:14.5px;color:#9A9590;line-height:1.7;}
+.faq-section{margin-bottom:4rem;}
+@media(max-width:768px){.two-col{grid-template-columns:1fr;gap:2.5rem;}.process-step{flex-direction:column;gap:0.5rem;}}
+</style>

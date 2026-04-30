@@ -1,0 +1,134 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">Orange<span>Core</span> Group</a>
+      <p class="footer-tagline">Fractional CRO & RevOps Consulting<br />Plano, TX · Serving clients nationwide</p>
+      <div class="footer-badges">
+        <span class="badge">SDVOSB Certified</span>
+        <span class="badge">Veteran Owned</span>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-nav-col">
+        <p class="footer-nav-label">Services</p>
+        <ul>
+          <li><a href="/services/">Services & Pricing</a></li>
+          <li><a href="/hubspot-revops-consultant/">HubSpot RevOps</a></li>
+          <li><a href="/fractional-cro/">Fractional CRO</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-col">
+        <p class="footer-nav-label">Company</p>
+        <ul>
+          <li><a href="/about/">About Glen</a></li>
+          <li><a href="/contact/">Book a Discovery Call</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© {year} OrangeCore Group LLC · Plano, TX · SDVOSB Certified</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--charcoal);
+    color: #9A9590;
+    margin-top: 5rem;
+  }
+
+  .footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3.5rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .footer-logo {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .footer-logo span { color: var(--orange); }
+
+  .footer-tagline {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #6E6A65;
+    margin-bottom: 1rem;
+  }
+
+  .footer-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(232,97,10,0.4);
+    color: var(--orange);
+    padding: 3px 10px;
+    border-radius: 2px;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .footer-nav-col {}
+  .footer-nav-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #4A4744;
+    margin-bottom: 0.75rem;
+  }
+  .footer-nav-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .footer-nav-col a {
+    font-size: 13.5px;
+    color: #6E6A65;
+    transition: color var(--transition-fast);
+  }
+  .footer-nav-col a:hover { color: #C8C4BF; }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    text-align: center;
+    padding: 1.25rem 2rem;
+    font-size: 11.5px;
+    color: #4A4744;
+  }
+
+  @media (max-width: 640px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+    }
+    .footer-nav {
+      gap: 2rem;
+    }
+  }
+</style>
