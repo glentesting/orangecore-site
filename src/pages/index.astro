@@ -8,12 +8,7 @@ const schema = {
   "url": "https://orangecoregroup.com",
   "description": "Fractional CRO and RevOps consulting for B2B SaaS and fintech companies.",
   "founder": { "@type": "Person", "name": "Glen Swindell" },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Plano",
-    "addressRegion": "TX",
-    "addressCountry": "US"
-  },
+  "address": { "@type": "PostalAddress", "addressLocality": "Plano", "addressRegion": "TX", "addressCountry": "US" },
   "areaServed": ["Plano TX", "Dallas TX", "DFW", "United States"]
 };
 ---
@@ -24,275 +19,258 @@ const schema = {
   schema={schema}
 >
 
-  <!-- HERO -->
-  <header class="hero-wrap">
-    <div class="wrap hero-grid">
-      <div class="hero-left">
-        <div class="hero-meta">
-          <span class="tag"><span class="dot"></span>Booking · Q3 2026</span>
-          <span class="meta-text">Plano, TX · Serving clients nationwide</span>
-        </div>
-        <h1 class="display hero-h1">
-          A fractional CRO<br>
-          <em class="accent-ital">who actually ships</em> —<br>
-          on a fixed price,<br>
-          with a fixed end date.
-        </h1>
-        <p class="lede hero-lede">
-          OrangeCore is a one-person revenue practice for B2B SaaS and fintech operators
-          who are tired of consultants billing by the hour and leaving with the playbook.
-          Fixed scope. Fixed price. Real deliverables — yours to keep.
-        </p>
-        <div class="hero-cta">
-          <a href="#diagnostic" class="btn btn-primary">Take the 90-second diagnostic <span class="arr">→</span></a>
-          <a href="/services/" class="btn btn-ghost">See pricing & scope</a>
-        </div>
+  <!-- HERO — cream bg, heavy typography -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <span class="availability">
+          <span class="avail-dot"></span>
+          Booking · Q3 2026
+        </span>
+        <span class="hero-location">Plano, TX · Serving clients nationwide</span>
       </div>
 
-      <aside class="hero-right">
-        <figure class="portrait">
-          <div class="ph portrait-ph">
-            Glen — portrait<br><span style="font-size:10px;">(replace src)</span>
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-h1">
+            A fractional CRO<br>
+            <em class="orange-ital">who actually ships</em><br>
+            — fixed price,<br>fixed end date.
+          </h1>
+          <p class="hero-sub">
+            OrangeCore is a one-person revenue practice for B2B SaaS and fintech operators
+            tired of consultants billing by the hour and leaving with the playbook.
+            Fixed scope. Fixed price. Yours to keep when we're done.
+          </p>
+          <div class="hero-actions">
+            <a href="#diagnostic" class="btn-orange">Take the 90-second diagnostic <span class="arr">→</span></a>
+            <a href="/services/" class="btn-outline-dark">See pricing & scope</a>
           </div>
-          <figcaption>
-            <div class="portrait-name">Glen <em class="accent-ital">— Founder, Fractional CRO</em></div>
-            <div class="portrait-meta">U.S. Army Veteran · 10+ yrs revenue leadership · B2B SaaS & Fintech</div>
-          </figcaption>
-        </figure>
-      </aside>
-    </div>
+        </div>
 
-    <div class="wrap">
-      <div class="ledger">
-        <div>
-          <div class="k">Engagement</div>
-          <div class="v">14 <span class="v-sub">days</span></div>
-          <div class="sub">Average delivery, end to end</div>
+        <aside class="hero-right">
+          <div class="portrait-wrap">
+            <div class="ph portrait-ph" role="img" aria-label="Glen Swindell, fractional CRO and RevOps consultant, Plano TX">
+              Glen — portrait<br><span style="font-size:10px;opacity:0.6;">(replace src)</span>
+            </div>
+            <div class="portrait-cap">
+              <span class="portrait-name">Glen <em class="orange-ital">— Founder, Fractional CRO</em></span>
+              <span class="portrait-meta">U.S. Army Veteran · 10+ yrs revenue leadership · B2B SaaS & Fintech</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- STAT BAR -->
+      <div class="stat-bar">
+        <div class="stat-item">
+          <span class="stat-num">14<span class="stat-unit">days</span></span>
+          <span class="stat-label">Average delivery, end to end</span>
         </div>
-        <div>
-          <div class="k">Billing</div>
-          <div class="v">$0<span class="v-sub">/hr</span></div>
-          <div class="sub">No hourly. No retainers. No surprises.</div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num">$0<span class="stat-unit">/hr</span></span>
+          <span class="stat-label">No hourly. No retainers. No surprises.</span>
         </div>
-        <div>
-          <div class="k">ARR secured</div>
-          <div class="v">$67M<span class="v-sub">+</span></div>
-          <div class="sub">Across SaaS, fintech, and payments</div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num">$67M<span class="stat-unit">+</span></span>
+          <span class="stat-label">ARR secured across SaaS, fintech & payments</span>
         </div>
-        <div>
-          <div class="k">Avg ARR lift</div>
-          <div class="v">22<span class="v-sub">%</span></div>
-          <div class="sub">Across 10+ delivered engagements</div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num">22<span class="stat-unit">%</span></span>
+          <span class="stat-label">Avg ARR lift across 10+ engagements</span>
         </div>
       </div>
     </div>
   </header>
 
-  <hr class="rule" />
-
   <!-- PROOF STRIP -->
-  <section class="proof-strip">
+  <div class="proof-strip">
     <div class="wrap proof-row">
-      <span class="eyebrow">Past engagements</span>
-      <div class="proof-logos">
+      <span class="proof-label">Past engagements</span>
+      <div class="proof-items">
         <span>Enterprise Fintech</span>
-        <span class="sep">·</span>
+        <span class="proof-sep">·</span>
         <span>Global Payments</span>
-        <span class="sep">·</span>
+        <span class="proof-sep">·</span>
         <span>B2B SaaS</span>
-        <span class="sep">·</span>
+        <span class="proof-sep">·</span>
         <span>Government Finance</span>
-        <span class="sep">·</span>
+        <span class="proof-sep">·</span>
         <span>eCommerce</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <hr class="rule" />
-
-  <!-- MANIFESTO -->
-  <section class="section">
+  <!-- MANIFESTO — cream with orange left border -->
+  <section class="section manifesto-section">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">01 — The thesis</span>
-        <h2 class="display sec-h2">
-          Most fractional CROs sell <em class="accent-ital">strategy</em>.<br>
-          We sell <em class="accent-ital">finished work</em>.
-        </h2>
-      </div>
-
-      <div class="contrast">
-        <div class="contrast-col contrast-old">
-          <div class="contrast-label">Traditional fractional CRO / RevOps</div>
-          <ul>
-            <li>Hourly or day-rate billing — budget creep is the business model.</li>
-            <li>Weeks of "discovery" before anything actually gets built.</li>
-            <li>Vague deliverables. "Strategic guidance." Hard to measure ROI.</li>
-            <li>When they leave, the institutional knowledge leaves with them.</li>
-            <li>Scope quietly expands. The engagement never really ends.</li>
-          </ul>
+      <div class="manifesto-inner">
+        <div class="manifesto-head">
+          <span class="mono-label">01 — The thesis</span>
+          <h2 class="section-h2">
+            Most fractional CROs<br>sell <em class="orange-ital">strategy.</em><br>
+            We sell <em class="orange-ital">finished work.</em>
+          </h2>
         </div>
-        <div class="contrast-col contrast-new">
-          <div class="contrast-label">
-            <span class="brand-dot"></span>
-            OrangeCore productized service
+        <div class="contrast">
+          <div class="contrast-col contrast-old">
+            <p class="contrast-label">Traditional fractional CRO / RevOps</p>
+            <ul class="contrast-list">
+              <li>Hourly billing — budget creep is the business model.</li>
+              <li>Weeks of "discovery" before anything actually gets built.</li>
+              <li>Vague deliverables. "Strategic guidance." Hard to measure.</li>
+              <li>When they leave, the knowledge leaves with them.</li>
+              <li>Scope quietly expands. The engagement never really ends.</li>
+            </ul>
           </div>
-          <ul>
-            <li>Flat fee. You see the number before you sign anything.</li>
-            <li>Structured intake on day one. Building starts in week one.</li>
-            <li>Specific deliverables, documented and handed off — yours to keep.</li>
-            <li>Everything lives in your systems when we're done. Not ours.</li>
-            <li>Defined end date. Retainer is optional, never required.</li>
-          </ul>
+          <div class="contrast-col contrast-new">
+            <p class="contrast-label contrast-label-new">OrangeCore productized service</p>
+            <ul class="contrast-list">
+              <li>Flat fee. You see the number before you sign anything.</li>
+              <li>Structured intake day one. Building starts week one.</li>
+              <li>Specific deliverables, documented and handed off — yours.</li>
+              <li>Everything lives in your systems when we're done. Not ours.</li>
+              <li>Defined end date. Retainer is optional, never required.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- THREE TIERS -->
-  <section class="section section-band" id="pricing">
+  <!-- PRICING — dark background -->
+  <section class="section section-dark" id="pricing">
     <div class="wrap">
-      <div class="sec-head sec-centered">
-        <span class="eyebrow">02 — Three ways to work together</span>
-        <h2 class="display sec-h2">
+      <div class="section-head-centered">
+        <span class="mono-label" style="color:#8A8073;">02 — Three ways to work together</span>
+        <h2 class="section-h2 light">
           Pick a scope.<br>
-          <em class="accent-ital">Know the price.</em> Know the date.
+          <em class="orange-ital">Know the price.</em> Know the date.
         </h2>
-        <p class="lede" style="max-width:640px;margin:18px auto 0;">
-          Every engagement has a defined scope and a defined end. You'll know exactly
-          what you're getting before anything gets signed.
-        </p>
+        <p class="section-sub light-sub">Every engagement has a defined scope and a defined end. You'll know exactly what you're getting before anything gets signed.</p>
       </div>
 
       <div class="tiers">
         <article class="tier">
-          <div class="tier-head">
+          <div class="tier-head-row">
             <span class="tier-num">Tier 01</span>
-            <span class="tier-stamp">Diagnostic</span>
+            <span class="tier-tag">Diagnostic</span>
           </div>
-          <h3 class="tier-name display">Foundation</h3>
-          <p class="tier-pitch">
-            Something feels off but nobody can agree on what.
-            We tell you exactly what's broken and what to fix first.
-          </p>
-          <div class="tier-price">
-            <span class="amt">$5,500</span>
-            <span class="terms">One-time · 10 business days</span>
+          <h3 class="tier-name">Foundation</h3>
+          <p class="tier-pitch">Something feels off but nobody can agree on what. We tell you exactly what's broken and what to fix first.</p>
+          <div class="tier-price-row">
+            <span class="tier-price">$5,500</span>
+            <span class="tier-terms">One-time · 10 days</span>
           </div>
-          <ul class="tier-bullets">
+          <ul class="tier-list">
             <li>Full revenue ops audit — pipeline, CRM, ICP, handoff</li>
             <li>Gap analysis with prioritized fix list</li>
             <li>90-day RevOps roadmap, ready to execute</li>
             <li>CRM health scorecard + 60-min readout</li>
           </ul>
-          <a href="/services/#foundation" class="btn btn-ghost tier-cta">See what's included <span class="arr">→</span></a>
+          <a href="/services/#foundation" class="tier-btn tier-btn-ghost">See what's included →</a>
         </article>
 
-        <article class="tier tier-featured">
-          <div class="tier-head">
+        <article class="tier tier-hot">
+          <div class="tier-head-row">
             <span class="tier-num">Tier 02</span>
-            <span class="tier-stamp tier-stamp-hot">Most chosen</span>
+            <span class="tier-tag tier-tag-hot">Most chosen</span>
           </div>
-          <h3 class="tier-name display">Operate</h3>
-          <p class="tier-pitch">
-            A fractional CRO in the room every month — defined deliverables,
-            not a standing check-in you dread scheduling.
-          </p>
-          <div class="tier-price">
-            <span class="amt">$7,500<span class="per">/mo</span></span>
-            <span class="terms">3-month minimum</span>
+          <h3 class="tier-name">Operate</h3>
+          <p class="tier-pitch">A fractional CRO in the room every month — defined deliverables, not a standing check-in you dread scheduling.</p>
+          <div class="tier-price-row">
+            <span class="tier-price">$7,500<span class="tier-per">/mo</span></span>
+            <span class="tier-terms">3-month minimum</span>
           </div>
-          <ul class="tier-bullets">
+          <ul class="tier-list">
             <li>Monthly pipeline review + forecast with leadership</li>
             <li>One major deliverable per month, defined at kickoff</li>
             <li>Ongoing CRM management and data hygiene</li>
             <li>Bi-weekly team coaching + async Slack access</li>
           </ul>
-          <a href="/services/#operate" class="btn btn-primary tier-cta">See what's included <span class="arr">→</span></a>
+          <a href="/services/#operate" class="tier-btn tier-btn-orange">See what's included →</a>
         </article>
 
         <article class="tier">
-          <div class="tier-head">
+          <div class="tier-head-row">
             <span class="tier-num">Tier 03</span>
-            <span class="tier-stamp">Project</span>
+            <span class="tier-tag">Project</span>
           </div>
-          <h3 class="tier-name display">Build</h3>
-          <p class="tier-pitch">
-            The full engagement. We go in, build it right, hand it off clean.
-            No loose ends, no "let's revisit next quarter."
-          </p>
-          <div class="tier-price">
-            <span class="amt">$14,500</span>
-            <span class="terms">One-time · 3–4 weeks</span>
+          <h3 class="tier-name">Build</h3>
+          <p class="tier-pitch">The full engagement. We go in, build it right, hand it off clean. No loose ends, no "let's revisit next quarter."</p>
+          <div class="tier-price-row">
+            <span class="tier-price">$14,500</span>
+            <span class="tier-terms">One-time · 3–4 weeks</span>
           </div>
-          <ul class="tier-bullets">
+          <ul class="tier-list">
             <li>Full CRM buildout or cleanup (HubSpot, Salesforce)</li>
             <li>Pipeline stages, ICP definition, lead scoring</li>
             <li>Sales playbook + reporting dashboards</li>
             <li>30-day Slack support post-delivery</li>
           </ul>
-          <a href="/services/#build" class="btn btn-ghost tier-cta">See what's included <span class="arr">→</span></a>
+          <a href="/services/#build" class="tier-btn tier-btn-ghost">See what's included →</a>
         </article>
       </div>
 
-      <p class="tiers-foot eyebrow" style="text-align:center;margin-top:2.5rem;">
-        All engagements are AI-augmented — faster delivery, more consistent output.
-        Not a gimmick; it's how we move at project speed on a consultant budget.
+      <p class="tiers-footnote">
+        All engagements are AI-augmented — faster delivery, more consistent output. Not a gimmick; it's how we move at project speed on a consultant budget.
       </p>
     </div>
   </section>
 
-  <!-- DIAGNOSTIC QUIZ -->
-  <section class="section section-dark" id="diagnostic">
+  <!-- DIAGNOSTIC — slightly lighter dark -->
+  <section class="section section-mid" id="diagnostic">
     <div class="wrap diag-wrap">
-      <div class="diag-head">
-        <span class="eyebrow">03 — Live diagnostic</span>
-        <h2 class="display diag-h2">
+      <div class="diag-left">
+        <span class="mono-label" style="color:#8A8073;">03 — Live diagnostic</span>
+        <h2 class="section-h2 light">
           Four questions.<br>
-          <em class="accent-ital">Ninety seconds.</em><br>
-          A real read on your revenue function.
+          <em class="orange-ital">Ninety seconds.</em><br>
+          A real read on your<br>revenue function.
         </h2>
-        <p class="lede" style="color:#C9C0B2;margin-top:1rem;max-width:52ch;">
-          No email gate. No download. An honest signal of where you sit
-          on the curve — and which tier (if any) is the right fit.
-        </p>
-        <div class="diag-progress">
-          <div class="diag-bar"><span id="diag-fill" style="width:0%"></span></div>
-          <span class="eyebrow" id="diag-step-label">Question 1 of 4</span>
+        <p class="diag-sub">No email gate. No download. An honest signal of where you sit — and which tier (if any) is the right fit.</p>
+        <div class="diag-progress-wrap">
+          <div class="diag-bar-track"><span id="diag-fill" style="width:0%"></span></div>
+          <span class="mono-label" id="diag-step-label" style="color:#8A8073;margin-top:8px;display:block;">Question 1 of 4</span>
         </div>
       </div>
-      <div class="diag-body">
-        <div id="diag-questions"></div>
-        <div id="diag-result" hidden></div>
+      <div class="diag-right">
+        <div class="diag-card">
+          <div id="diag-questions"></div>
+          <div id="diag-result" hidden></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FIT -->
-  <section class="section">
+  <!-- FIT — cream, breathe -->
+  <section class="section fit-section">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">04 — Who this is for</span>
-        <h2 class="display sec-h2">
+      <div class="fit-head">
+        <span class="mono-label">04 — Who this is for</span>
+        <h2 class="section-h2">
           Worth a conversation if<br>
-          <em class="accent-ital">any of these sound familiar.</em>
+          <em class="orange-ital">any of these sound familiar.</em>
         </h2>
       </div>
-      <div class="fit">
-        <div class="fit-col">
-          <h4 class="fit-label">Probably a fit</h4>
+      <div class="fit-grid">
+        <div class="fit-yes">
+          <p class="fit-col-label">Probably a fit</p>
           <ul class="fit-list">
             <li>Revenue is inconsistent — good months, bad months, no real explanation.</li>
             <li>Your CRM is a graveyard. The team knows it's wrong so they stopped using it.</li>
             <li>Sales and marketing can't agree on what a qualified lead looks like.</li>
             <li>Board meeting incoming and the pipeline story isn't airtight.</li>
             <li>You need CRO-level thinking but $250K in salary isn't in the budget.</li>
-            <li>You're in fintech, payments, or B2B SaaS and tired of generalists who don't know the space.</li>
+            <li>You're in fintech, payments, or B2B SaaS — and tired of generalists who don't know the space.</li>
           </ul>
         </div>
-        <div class="fit-col fit-no">
-          <h4 class="fit-label">Probably not</h4>
-          <ul class="fit-list">
+        <div class="fit-no">
+          <p class="fit-col-label fit-col-label-no">Probably not</p>
+          <ul class="fit-list fit-list-no">
             <li>Pre-revenue, still figuring out if anyone wants what you're selling.</li>
             <li>You need a day-to-day sales manager. That's a hire, not a consultant.</li>
             <li>You want someone in meetings giving general advice with no defined output.</li>
@@ -303,395 +281,330 @@ const schema = {
     </div>
   </section>
 
-  <!-- GLEN SECTION -->
-  <section class="section section-band">
-    <div class="wrap">
-      <div class="glen-grid">
-        <div class="glen-img">
-          <div class="ph" style="aspect-ratio:4/5;width:100%;">
-            Glen — working portrait<br><span style="font-size:10px;">(replace src)</span>
-          </div>
+  <!-- GLEN — dark -->
+  <section class="section section-dark">
+    <div class="wrap glen-grid">
+      <div class="glen-img">
+        <div class="ph glen-ph" role="img" aria-label="Glen Swindell, fractional CRO, Plano TX">
+          Glen — working portrait<br><span style="font-size:10px;opacity:0.6;">(replace src)</span>
         </div>
-        <div class="glen-text">
-          <span class="eyebrow">05 — The person you're hiring</span>
-          <h2 class="display glen-h2">
-            You're not hiring<br>a firm.<br>
-            <em class="accent-ital">You're hiring me.</em>
-          </h2>
-          <p class="lede glen-lede">
-            I'm Glen. U.S. Army veteran, ten-plus years leading revenue across
-            enterprise fintech, global payments, and B2B SaaS. I built OrangeCore
-            because the consulting industry sells PowerPoint and calls it strategy.
-            You deserve finished work.
-          </p>
-          <p style="font-size:15px;color:var(--ink-2);line-height:1.7;margin-top:1rem;">
-            When we work together, I'm the one in your CRM. I'm the one writing the
-            playbook. I'm the one on the call with your VP of Sales. No account team,
-            no junior associate, no handoff — just me, the work, and a defined end date.
-          </p>
-          <div style="display:flex;gap:12px;margin-top:2rem;flex-wrap:wrap;">
-            <a href="/about/" class="btn btn-ghost">More about Glen <span class="arr">→</span></a>
-            <a href="/contact/" class="btn btn-primary">Book a discovery call</a>
-          </div>
+      </div>
+      <div class="glen-text">
+        <span class="mono-label" style="color:#8A8073;">05 — The person you're hiring</span>
+        <h2 class="section-h2 light" style="margin-top:16px;">
+          You're not hiring a firm.<br>
+          <em class="orange-ital">You're hiring me.</em>
+        </h2>
+        <p class="glen-body">
+          I'm Glen. U.S. Army veteran, ten-plus years leading revenue across enterprise fintech, global payments, and B2B SaaS. I built OrangeCore because the consulting industry sells PowerPoint and calls it strategy. You deserve finished work.
+        </p>
+        <p class="glen-body" style="margin-top:1rem;">
+          When we work together, I'm the one in your CRM. I'm the one writing the playbook. I'm the one on the call with your VP of Sales. No account team, no junior associate, no handoff — just me, the work, and a defined end date.
+        </p>
+        <div class="glen-tags">
+          <span class="glen-tag">U.S. Army Veteran</span>
+          <span class="glen-tag">SDVOSB Certified</span>
+          <span class="glen-tag">Plano, TX</span>
+          <span class="glen-tag">AI-Augmented</span>
+        </div>
+        <div class="glen-actions">
+          <a href="/about/" class="btn-outline-light">More about Glen →</a>
+          <a href="/contact/" class="btn-orange">Book a discovery call</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER CTA -->
-  <section class="section section-dark">
-    <div class="wrap cta-wrap">
-      <span class="eyebrow">Based in Plano, TX · Serving clients nationwide</span>
-      <h2 class="display cta-h2">
-        Not sure<br>
-        <em class="accent-ital">where to start?</em>
-      </h2>
-      <p class="lede" style="color:#C9C0B2;max-width:48ch;">
-        30 minutes. No pitch deck, no pressure. We'll figure out together if this
-        makes sense — and if it doesn't, you'll hear that too.
-      </p>
-      <div style="display:flex;gap:12px;margin-top:2rem;flex-wrap:wrap;">
-        <a href="#diagnostic" class="btn btn-primary" style="background:var(--paper);color:var(--ink);">Take the diagnostic first</a>
-        <a href="/contact/" class="btn" style="color:var(--paper);border:1px solid #4D453C;">Book a call directly <span class="arr">→</span></a>
+  <!-- FOOTER CTA — full orange -->
+  <section class="section cta-orange">
+    <div class="wrap cta-inner">
+      <div>
+        <span class="mono-label" style="color:rgba(255,255,255,0.5);">Based in Plano, TX · Serving clients nationwide</span>
+        <h2 class="cta-h2">
+          Not sure<br>where to start?
+        </h2>
+        <p class="cta-sub">30 minutes. No pitch deck, no pressure. We'll figure out together if this makes sense — and if it doesn't, you'll hear that too.</p>
       </div>
-      <div class="cta-meta eyebrow">
-        <span>SDVOSB Certified</span>
-        <span style="margin:0 1rem;">·</span>
-        <span>Veteran Owned</span>
-        <span style="margin:0 1rem;">·</span>
-        <span>AI-Augmented Delivery</span>
+      <div class="cta-actions">
+        <a href="#diagnostic" class="btn-white">Take the diagnostic first</a>
+        <a href="/contact/" class="btn-outline-white">Book a call directly →</a>
+        <div class="cta-badges">
+          <span>SDVOSB Certified</span>
+          <span>·</span>
+          <span>Veteran Owned</span>
+          <span>·</span>
+          <span>AI-Augmented Delivery</span>
+        </div>
       </div>
     </div>
   </section>
 
 </Base>
 
-<style>
-  /* ============================================================
-     Design system — warm advisory / editorial
-     ============================================================ */
-  :root {
-    --paper:      #F4EFE7;
-    --paper-2:    #EBE4D7;
-    --paper-3:    #E2D9C8;
-    --ink:        #1A1714;
-    --ink-2:      #3A332C;
-    --ink-3:      #6B6258;
-    --rule:       #C9BFAD;
-    --rule-soft:  #D9D0BE;
-    --accent:     #C2511A;
-    --accent-ink: #8A3810;
-    --serif:      'Source Serif 4', Georgia, serif;
-    --sans:       'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
-    --mono:       'JetBrains Mono', 'IBM Plex Mono', monospace;
-  }
-
-  /* override global body bg with warm paper */
-  :global(body) {
-    background: var(--paper) !important;
-    color: var(--ink) !important;
-    font-family: var(--sans) !important;
-  }
-
-  /* ---------- shared ---------- */
-  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
-  .rule { height:1px; background:var(--rule); border:0; margin:0; }
-  .section { padding: 96px 0; }
-  .section-band { background: var(--paper-2); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
-  .section-dark { background: var(--ink); color: var(--paper); }
-  .section-dark .eyebrow { color: #B7AC9C; }
-
-  .display {
-    font-family: var(--serif);
-    font-weight: 400;
-    letter-spacing: -0.022em;
-    line-height: 0.98;
-    color: var(--ink);
-  }
-  .accent-ital { font-style: italic; color: var(--accent); }
-  .lede { font-family: var(--serif); font-size: 21px; line-height: 1.45; color: var(--ink-2); letter-spacing: -0.005em; }
-  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
-  .meta-text { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.04em; color: var(--ink-3); }
-
-  /* tag pill */
-  .tag { display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border:1px solid var(--rule); border-radius:999px; font-family:var(--mono); font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-2); }
-  .dot { width:6px; height:6px; border-radius:50%; background:var(--accent); flex-shrink:0; }
-
-  /* buttons */
-  .btn { display:inline-flex; align-items:center; gap:10px; padding:13px 20px; border-radius:999px; font-size:14.5px; font-weight:500; border:1px solid transparent; cursor:pointer; transition:all .15s ease; white-space:nowrap; text-decoration:none; font-family:var(--sans); }
-  .btn-primary { background:var(--ink); color:var(--paper); }
-  .btn-primary:hover { background:#000; }
-  .btn-ghost { background:transparent; color:var(--ink); border-color:var(--ink); }
-  .btn-ghost:hover { background:var(--ink); color:var(--paper); }
-  .arr { display:inline-block; transition:transform .2s ease; }
-  .btn:hover .arr { transform:translateX(3px); }
-
-  /* ledger */
-  .ledger { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); margin-top:72px; }
-  .ledger > div { padding:28px 24px; border-right:1px solid var(--rule); }
-  .ledger > div:last-child { border-right:none; }
-  .k { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); margin-bottom:12px; }
-  .v { font-family:var(--serif); font-size:36px; letter-spacing:-0.02em; line-height:1; color:var(--ink); }
-  .v-sub { font-size:22px; color:var(--ink-3); }
-  .sub { font-size:13px; color:var(--ink-3); margin-top:8px; }
-
-  /* placeholder */
-  .ph { background: repeating-linear-gradient(135deg, rgba(26,23,20,0.05) 0 2px, transparent 2px 14px), var(--paper-3); border:1px solid var(--rule); display:grid; place-items:center; color:var(--ink-3); font-family:var(--mono); font-size:12px; letter-spacing:0.1em; text-transform:uppercase; text-align:center; padding:16px; }
-
-  /* HERO */
-  .hero-wrap { padding: 72px 0 0; }
-  .hero-grid { display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px; align-items:start; padding-bottom:72px; }
-  .hero-meta { display:flex; align-items:center; gap:16px; margin-bottom:32px; flex-wrap:wrap; }
-  .hero-h1 { font-size: clamp(42px, 5.5vw, 80px); margin:0 0 28px; }
-  .hero-lede { margin-bottom:32px; max-width:54ch; }
-  .hero-cta { display:flex; gap:12px; flex-wrap:wrap; }
-  .portrait { margin:0; }
-  .portrait-ph { aspect-ratio:4/5; width:100%; }
-  figcaption { margin-top:14px; padding-top:12px; border-top:1px solid var(--rule); }
-  .portrait-name { font-family:var(--serif); font-size:17px; color:var(--ink); margin-bottom:4px; }
-  .portrait-meta { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); line-height:1.6; }
-
-  /* proof strip */
-  .proof-strip { padding:20px 0; }
-  .proof-row { display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
-  .proof-logos { display:flex; align-items:center; gap:14px; flex-wrap:wrap; font-family:var(--serif); font-size:16px; color:var(--ink-2); }
-  .sep { color:var(--rule); }
-
-  /* section heads */
-  .sec-head { margin-bottom:56px; max-width:880px; }
-  .sec-centered { text-align:center; margin-left:auto; margin-right:auto; }
-  .sec-h2 { font-size:clamp(38px,4.6vw,64px); letter-spacing:-0.02em; line-height:1.02; margin-top:14px; }
-
-  /* contrast table */
-  .contrast { display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid var(--rule); }
-  .contrast-col { padding:36px 36px 36px 0; }
-  .contrast-col + .contrast-col { padding:36px 0 36px 36px; border-left:1px solid var(--rule); }
-  .contrast-label { font-family:var(--mono); font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-3); margin-bottom:20px; display:flex; align-items:center; gap:8px; }
-  .contrast-old .contrast-label { color:var(--ink-3); }
-  .contrast-new .contrast-label { color:var(--accent); }
-  .brand-dot { display:inline-block; width:12px; height:12px; border-radius:50%; background:var(--accent); flex-shrink:0; }
-  .contrast ul { list-style:none; padding:0; margin:0; display:grid; gap:14px; }
-  .contrast li { font-size:15.5px; color:var(--ink-2); line-height:1.5; padding-left:20px; position:relative; }
-  .contrast-old li::before { content:'—'; position:absolute; left:0; color:var(--ink-3); }
-  .contrast-new li::before { content:'✓'; position:absolute; left:0; color:var(--accent); font-weight:600; }
-
-  /* tiers */
-  .tiers { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); margin-top:48px; }
-  .tier { background:var(--paper-2); padding:36px 32px; display:flex; flex-direction:column; }
-  .tier-featured { background:var(--paper); position:relative; }
-  .tier-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
-  .tier-num { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); }
-  .tier-stamp { font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); border:1px solid var(--rule); padding:3px 8px; border-radius:3px; }
-  .tier-stamp-hot { background:var(--accent); color:#fff; border-color:var(--accent); }
-  .tier-name { font-size:clamp(28px,3vw,40px); letter-spacing:-0.02em; line-height:1; margin-bottom:14px; }
-  .tier-pitch { font-size:14.5px; color:var(--ink-2); line-height:1.55; margin-bottom:24px; flex-grow:1; }
-  .tier-price { margin-bottom:24px; padding-bottom:24px; border-bottom:1px solid var(--rule); }
-  .amt { font-family:var(--serif); font-size:36px; letter-spacing:-0.02em; color:var(--ink); display:block; }
-  .per { font-size:20px; color:var(--ink-3); }
-  .terms { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); display:block; margin-top:4px; }
-  .tier-bullets { list-style:none; padding:0; margin:0 0 28px; display:grid; gap:10px; }
-  .tier-bullets li { font-size:14px; color:var(--ink-2); line-height:1.45; padding-left:18px; position:relative; }
-  .tier-bullets li::before { content:'→'; position:absolute; left:0; color:var(--accent); font-size:12px; }
-  .tier-cta { margin-top:auto; }
-
-  /* diagnostic */
-  .diag-wrap { display:grid; grid-template-columns:1fr 1.2fr; gap:64px; align-items:start; }
-  .diag-h2 { font-size:clamp(36px,4vw,58px); letter-spacing:-0.02em; line-height:1.05; margin-top:14px; color:var(--paper); }
-  .diag-progress { margin-top:28px; }
-  .diag-bar { height:2px; background:#2D2620; position:relative; margin-bottom:10px; }
-  .diag-bar span { position:absolute; left:0; top:0; bottom:0; background:var(--accent); transition:width .4s cubic-bezier(.6,0,.2,1); }
-  .diag-body { background:rgba(255,255,255,0.03); border:1px solid #2D2620; padding:36px; min-height:380px; }
-
-  /* diagnostic injected styles */
-  :global(.q-num) { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8073; }
-  :global(.q-text) { font-family:var(--serif); font-size:26px; letter-spacing:-0.01em; line-height:1.2; margin:14px 0 24px; color:var(--paper); }
-  :global(.q-options) { display:grid; gap:10px; }
-  :global(.q-opt) { width:100%; text-align:left; padding:14px 18px; background:transparent; border:1px solid #2D2620; color:var(--paper); font-family:var(--sans); font-size:15px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:background .15s, border-color .15s; }
-  :global(.q-opt:hover) { background:rgba(255,255,255,0.04); border-color:var(--accent); }
-  :global(.q-opt .key) { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:#8A8073; margin-left:14px; }
-  :global(.q-opt:hover .key) { color:var(--accent); }
-  :global(.diag-result) { animation:fadeIn .5s ease; }
-  :global(@keyframes fadeIn) { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
-  :global(.diag-result-eyebrow) { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); margin-bottom:14px; }
-  :global(.diag-result-h) { font-family:var(--serif); font-size:28px; line-height:1.15; letter-spacing:-0.01em; margin-bottom:14px; color:var(--paper); }
-  :global(.diag-result-body) { color:#C9C0B2; font-size:15px; line-height:1.65; margin-bottom:24px; }
-  :global(.diag-rec) { border-top:1px solid #2D2620; padding-top:20px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
-  :global(.diag-rec-label) { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8073; }
-  :global(.diag-rec-name) { font-family:var(--serif); font-size:20px; letter-spacing:-0.01em; color:var(--paper); margin-top:4px; }
-  :global(.diag-rec-name b) { color:var(--accent); font-weight:400; }
-
-  /* fit */
-  .fit { display:grid; grid-template-columns:1.6fr 1fr; gap:0; border-top:1px solid var(--rule); }
-  .fit-col { padding:36px 36px 36px 0; }
-  .fit-col + .fit-col { padding:36px 0 36px 36px; border-left:1px solid var(--rule); }
-  .fit-label { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); margin:0 0 24px; font-weight:400; }
-  .fit-list { list-style:none; padding:0; margin:0; display:grid; gap:16px; }
-  .fit-list li { font-family:var(--serif); font-size:18px; line-height:1.4; letter-spacing:-0.005em; color:var(--ink); padding-left:24px; position:relative; }
-  .fit-list li::before { content:'✓'; position:absolute; left:0; top:2px; color:var(--accent); font-family:var(--sans); font-weight:600; }
-  .fit-no .fit-list li { color:var(--ink-3); font-style:italic; }
-  .fit-no .fit-list li::before { content:'×'; color:var(--ink-3); }
-
-  /* glen */
-  .glen-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:64px; align-items:start; }
-  .glen-h2 { font-size:clamp(38px,4.6vw,64px); letter-spacing:-0.02em; line-height:1.02; margin-top:14px; }
-  .glen-lede { margin-top:28px; max-width:52ch; }
-
-  /* footer cta */
-  .cta-wrap { padding:40px 0; }
-  .cta-h2 { font-size:clamp(48px,6vw,88px); max-width:14ch; margin:18px 0 24px; color:var(--paper); }
-  .cta-meta { margin-top:56px; padding-top:28px; border-top:1px solid #2D2620; color:#8A8073; }
-  .section-dark .display { color:var(--paper); }
-
-  /* responsive */
-  @media (max-width: 1000px) {
-    .hero-grid, .glen-grid, .diag-wrap { grid-template-columns:1fr; gap:48px; }
-    .contrast, .fit { grid-template-columns:1fr; }
-    .contrast-col, .fit-col { padding:32px 0 !important; border-left:none !important; border-bottom:1px solid var(--rule); }
-    .tiers { grid-template-columns:1fr; }
-    .ledger { grid-template-columns:repeat(2,1fr); }
-    .ledger > div:nth-child(2) { border-right:none; }
-    .ledger > div:nth-child(1), .ledger > div:nth-child(2) { border-bottom:1px solid var(--rule); }
-  }
-  @media (max-width: 640px) {
-    .hero-h1 { font-size:clamp(36px,10vw,56px); }
-    .section { padding:64px 0; }
-    .wrap { padding:0 20px; }
-  }
-</style>
-
 <script>
 const DIAG_QUESTIONS = [
-  {
-    text: "When was the last time your CRM data could survive a board meeting without an apology?",
-    options: [
-      { label: "Last week — we trust it.", score: 0 },
-      { label: "Last quarter, give or take.", score: 1 },
-      { label: "Honestly? Not in recent memory.", score: 2 },
-      { label: "We don't really use the CRM that way.", score: 3 },
-    ],
-  },
-  {
-    text: "If we asked your sales lead and your marketing lead to define a qualified lead, how close would the answers be?",
-    options: [
-      { label: "Identical. We've documented it.", score: 0 },
-      { label: "Close — same intent, different words.", score: 1 },
-      { label: "They'd argue about it for 20 minutes.", score: 2 },
-      { label: "They'd disagree on what 'lead' even means.", score: 3 },
-    ],
-  },
-  {
-    text: "How predictable is next quarter's pipeline right now?",
-    options: [
-      { label: "Tight forecast, ±5%.", score: 0 },
-      { label: "Reasonable, ±15%.", score: 1 },
-      { label: "It's directional at best.", score: 2 },
-      { label: "We're making decisions on vibes.", score: 3 },
-    ],
-  },
-  {
-    text: "What's your timeline to fix it?",
-    options: [
-      { label: "Yesterday — board meeting incoming.", score: 3 },
-      { label: "Inside the next 30–60 days.", score: 2 },
-      { label: "This year — when bandwidth allows.", score: 1 },
-      { label: "Just exploring for now.", score: 0 },
-    ],
-  },
+  { text: "When was the last time your CRM data could survive a board meeting without an apology?", options: [{ label: "Last week — we trust it.", score: 0 },{ label: "Last quarter, give or take.", score: 1 },{ label: "Honestly? Not in recent memory.", score: 2 },{ label: "We don't really use the CRM that way.", score: 3 }] },
+  { text: "If we asked your sales lead and marketing lead to define a qualified lead, how close would the answers be?", options: [{ label: "Identical. We've documented it.", score: 0 },{ label: "Close — same intent, different words.", score: 1 },{ label: "They'd argue about it for 20 minutes.", score: 2 },{ label: "They'd disagree on what 'lead' even means.", score: 3 }] },
+  { text: "How predictable is next quarter's pipeline right now?", options: [{ label: "Tight forecast, ±5%.", score: 0 },{ label: "Reasonable, ±15%.", score: 1 },{ label: "It's directional at best.", score: 2 },{ label: "We're making decisions on vibes.", score: 3 }] },
+  { text: "What's your timeline to fix it?", options: [{ label: "Yesterday — board meeting incoming.", score: 3 },{ label: "Inside the next 30–60 days.", score: 2 },{ label: "This year — when bandwidth allows.", score: 1 },{ label: "Just exploring for now.", score: 0 }] },
 ];
-
 const RESULTS = [
-  {
-    range: [0, 3],
-    eyebrow: "Healthy revenue function",
-    h: "Your engine is running. Keep it that way.",
-    body: "Honestly — you may not need us right now. If something specific is bothering you, a Foundation diagnostic will surface it in 10 days. Otherwise, save your money.",
-    rec: { name: "Foundation", note: "Optional · only if a specific signal is off" },
-  },
-  {
-    range: [4, 7],
-    eyebrow: "Mild misalignment",
-    h: "There's friction, but you can name it.",
-    body: "You know roughly where the leak is. The right move is a focused build — a HubSpot rebuild, a lead-scoring overhaul, a forecast model — handed off in three to four weeks.",
-    rec: { name: "Build", note: "Recommended · $14,500 · 3–4 weeks" },
-  },
-  {
-    range: [8, 10],
-    eyebrow: "Compounding tax",
-    h: "You're paying for this every month — quietly.",
-    body: "This is where Operate earns its keep. Three months of fractional CRO leadership, hands in the system, board-ready narrative every month.",
-    rec: { name: "Operate", note: "Recommended · $7,500/mo · 3-month minimum" },
-  },
-  {
-    range: [11, 12],
-    eyebrow: "Active emergency",
-    h: "Skip the diagnostic. Pick up the phone.",
-    body: "What you described is a board-meeting-on-Tuesday situation. Foundation in 10 days, then straight into Operate or Build. Let's get on a call this week.",
-    rec: { name: "Foundation → Operate", note: "Urgent · combined engagement" },
-  },
+  { range: [0,3], eyebrow: "Healthy revenue function", h: "Your engine is running. Keep it that way.", body: "Honestly — you may not need us right now. If something specific is bothering you, Foundation will surface it in 10 days. Otherwise, save your money.", rec: { name: "Foundation", note: "Optional · only if a specific signal is off" } },
+  { range: [4,7], eyebrow: "Mild misalignment", h: "There's friction, but you can name it.", body: "You know roughly where the leak is. A focused Build — HubSpot rebuild, lead-scoring overhaul, forecast model — handed off in three to four weeks.", rec: { name: "Build", note: "Recommended · $14,500 · 3–4 weeks" } },
+  { range: [8,10], eyebrow: "Compounding tax", h: "You're paying for this every month — quietly.", body: "This is where Operate earns its keep. Three months of fractional CRO leadership, hands in the system, board-ready narrative every month.", rec: { name: "Operate", note: "Recommended · $7,500/mo · 3-month minimum" } },
+  { range: [11,12], eyebrow: "Active emergency", h: "Skip the diagnostic. Pick up the phone.", body: "What you described is a board-meeting-on-Tuesday situation. Foundation in 10 days, then straight into Operate or Build. Let's talk this week.", rec: { name: "Foundation → Operate", note: "Urgent · combined engagement" } },
 ];
-
 const state = { step: 0, scores: [] };
-
 function renderStep() {
   const fill = document.getElementById('diag-fill');
   const label = document.getElementById('diag-step-label');
   const host = document.getElementById('diag-questions');
-  if (!fill || !label || !host) return;
-  fill.style.width = (state.step / DIAG_QUESTIONS.length * 100) + '%';
-  label.textContent = `Question ${state.step + 1} of ${DIAG_QUESTIONS.length}`;
+  if (!fill||!label||!host) return;
+  fill.style.width = (state.step/DIAG_QUESTIONS.length*100)+'%';
+  label.textContent = `Question ${state.step+1} of ${DIAG_QUESTIONS.length}`;
   const q = DIAG_QUESTIONS[state.step];
-  host.innerHTML = `
-    <div class="q-num">Q.0${state.step + 1}</div>
-    <div class="q-text">${q.text}</div>
-    <div class="q-options">
-      ${q.options.map((o, i) => `
-        <button class="q-opt" data-score="${o.score}">
-          <span>${o.label}</span>
-          <span class="key">${String.fromCharCode(65 + i)}</span>
-        </button>
-      `).join('')}
-    </div>
-  `;
-  host.querySelectorAll('.q-opt').forEach(btn => {
-    btn.addEventListener('click', () => {
-      state.scores.push(parseInt(btn.dataset.score, 10));
-      state.step += 1;
-      if (state.step >= DIAG_QUESTIONS.length) renderResult();
-      else renderStep();
+  host.innerHTML = `<div class="q-num">Q.0${state.step+1}</div><div class="q-text">${q.text}</div><div class="q-opts">${q.options.map((o,i)=>`<button class="q-opt" data-score="${o.score}"><span>${o.label}</span><span class="q-key">${String.fromCharCode(65+i)}</span></button>`).join('')}</div>`;
+  host.querySelectorAll('.q-opt').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      state.scores.push(parseInt((btn as HTMLElement).dataset.score||'0',10));
+      state.step+=1;
+      if(state.step>=DIAG_QUESTIONS.length) renderResult(); else renderStep();
     });
   });
 }
-
 function renderResult() {
-  const total = state.scores.reduce((a, b) => a + b, 0);
-  const result = RESULTS.find(r => total >= r.range[0] && total <= r.range[1]) || RESULTS[1];
-  const fill = document.getElementById('diag-fill');
-  const label = document.getElementById('diag-step-label');
-  const host = document.getElementById('diag-questions');
-  fill.style.width = '100%';
-  label.textContent = `Result · score ${total}/12`;
-  host.innerHTML = `
-    <div class="diag-result">
-      <div class="diag-result-eyebrow">${result.eyebrow}</div>
-      <h3 class="diag-result-h">${result.h}</h3>
-      <p class="diag-result-body">${result.body}</p>
-      <div class="diag-rec">
-        <div>
-          <div class="diag-rec-label">Recommended next step</div>
-          <div class="diag-rec-name"><b>${result.rec.name}</b> &nbsp;·&nbsp; ${result.rec.note}</div>
-        </div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <button id="diag-restart" class="btn" style="color:var(--paper);border:1px solid #4D453C;">Retake</button>
-          <a href="/contact/" class="btn btn-primary" style="background:var(--paper);color:var(--ink);">Book a call →</a>
-        </div>
-      </div>
-    </div>
-  `;
-  document.getElementById('diag-restart')?.addEventListener('click', () => {
-    state.step = 0; state.scores = []; renderStep();
-  });
+  const total=state.scores.reduce((a,b)=>a+b,0);
+  const result=RESULTS.find(r=>total>=r.range[0]&&total<=r.range[1])||RESULTS[1];
+  const fill=document.getElementById('diag-fill');
+  const label=document.getElementById('diag-step-label');
+  const host=document.getElementById('diag-questions');
+  if(!fill||!label||!host) return;
+  fill.style.width='100%';
+  label.textContent=`Result · score ${total}/12`;
+  host.innerHTML=`<div class="diag-result"><div class="result-eyebrow">${result.eyebrow}</div><h3 class="result-h">${result.h}</h3><p class="result-body">${result.body}</p><div class="result-rec"><div><div class="result-rec-label">Recommended next step</div><div class="result-rec-name"><b>${result.rec.name}</b> · ${result.rec.note}</div></div><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;"><button id="diag-restart" class="q-opt" style="width:auto;padding:10px 16px;">Retake</button><a href="/contact/" class="tier-btn-orange" style="display:inline-flex;align-items:center;padding:10px 18px;border-radius:4px;font-size:14px;font-weight:500;text-decoration:none;">Book a call →</a></div></div></div>`;
+  document.getElementById('diag-restart')?.addEventListener('click',()=>{state.step=0;state.scores=[];renderStep();});
 }
-
-document.addEventListener('DOMContentLoaded', renderStep);
+document.addEventListener('DOMContentLoaded',renderStep);
 </script>
 
+<style>
+  /* ============================================================
+     Design tokens
+  ============================================================ */
+  :root {
+    --paper:     #F4EFE7;
+    --paper-2:   #EBE4D7;
+    --ink:       #1A1714;
+    --ink-2:     #3A332C;
+    --ink-3:     #6B6258;
+    --rule:      #C9BFAD;
+    --orange:    #C2511A;
+    --orange-dk: #A3430F;
+    --orange-lt: rgba(194,81,26,0.08);
+    --mid:       #242018;
+    --serif:     'Source Serif 4', Georgia, serif;
+    --sans:      'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
+    --mono:      'JetBrains Mono', monospace;
+  }
+  :global(body) { background:var(--paper)!important; color:var(--ink)!important; font-family:var(--sans)!important; }
+
+  /* ============================================================
+     Shared utilities
+  ============================================================ */
+  .wrap { max-width:1240px; margin:0 auto; padding:0 32px; }
+  .section { padding:96px 0; }
+  .section-dark { background:var(--ink); }
+  .section-mid  { background:var(--mid); }
+  .mono-label { font-family:var(--mono); font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-3); }
+  .orange-ital { font-style:italic; color:var(--orange); font-family:var(--serif); }
+  .section-h2 { font-family:var(--serif); font-size:clamp(38px,4.8vw,68px); font-weight:600; letter-spacing:-0.025em; line-height:1.02; color:var(--ink); margin-top:14px; }
+  .section-h2.light { color:#F4EFE7; }
+  .section-sub { font-family:var(--serif); font-size:19px; line-height:1.5; color:var(--ink-2); margin-top:14px; max-width:52ch; }
+  .section-sub.light-sub { color:#9A9080; }
+  .arr { display:inline-block; transition:transform .2s; }
+
+  /* buttons */
+  .btn-orange { display:inline-flex; align-items:center; gap:10px; background:var(--orange); color:#fff; padding:14px 24px; border-radius:4px; font-size:14.5px; font-weight:600; text-decoration:none; border:none; cursor:pointer; transition:background .15s; white-space:nowrap; font-family:var(--sans); }
+  .btn-orange:hover { background:var(--orange-dk); }
+  .btn-outline-dark { display:inline-flex; align-items:center; gap:10px; background:transparent; color:var(--ink); padding:13px 24px; border-radius:4px; font-size:14.5px; font-weight:500; text-decoration:none; border:2px solid var(--ink); transition:all .15s; white-space:nowrap; font-family:var(--sans); }
+  .btn-outline-dark:hover { background:var(--ink); color:var(--paper); }
+  .btn-outline-light { display:inline-flex; align-items:center; gap:10px; background:transparent; color:#F4EFE7; padding:13px 24px; border-radius:4px; font-size:14.5px; font-weight:500; text-decoration:none; border:2px solid rgba(244,239,231,0.3); transition:all .15s; white-space:nowrap; font-family:var(--sans); }
+  .btn-outline-light:hover { border-color:#F4EFE7; }
+  .btn-white { display:inline-flex; align-items:center; gap:10px; background:#fff; color:var(--orange); padding:14px 24px; border-radius:4px; font-size:14.5px; font-weight:600; text-decoration:none; border:none; cursor:pointer; transition:all .15s; white-space:nowrap; font-family:var(--sans); }
+  .btn-white:hover { background:#F4EFE7; }
+  .btn-outline-white { display:inline-flex; align-items:center; gap:10px; background:transparent; color:#fff; padding:13px 24px; border-radius:4px; font-size:14.5px; font-weight:500; text-decoration:none; border:2px solid rgba(255,255,255,0.4); transition:all .15s; white-space:nowrap; font-family:var(--sans); }
+  .btn-outline-white:hover { border-color:#fff; }
+
+  /* placeholder */
+  .ph { background:repeating-linear-gradient(135deg,rgba(26,23,20,0.06) 0 2px,transparent 2px 14px),#E2D9C8; border:1px solid var(--rule); display:grid; place-items:center; color:var(--ink-3); font-family:var(--mono); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; text-align:center; padding:16px; }
+
+  /* ============================================================
+     HERO
+  ============================================================ */
+  .hero { padding:72px 0 0; background:var(--paper); }
+  .hero-top { display:flex; align-items:center; gap:24px; margin-bottom:48px; flex-wrap:wrap; }
+  .availability { display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-2); border:1px solid var(--rule); padding:6px 14px; border-radius:999px; }
+  .avail-dot { width:7px; height:7px; border-radius:50%; background:var(--orange); flex-shrink:0; animation:pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+  .hero-location { font-family:var(--mono); font-size:12px; letter-spacing:0.08em; color:var(--ink-3); }
+  .hero-grid { display:grid; grid-template-columns:1.15fr 0.85fr; gap:64px; align-items:start; padding-bottom:64px; }
+  .hero-h1 { font-family:var(--serif); font-size:clamp(48px,6vw,88px); font-weight:700; letter-spacing:-0.03em; line-height:0.96; color:var(--ink); margin-bottom:28px; }
+  .hero-sub { font-family:var(--serif); font-size:19px; line-height:1.6; color:var(--ink-2); max-width:52ch; margin-bottom:36px; }
+  .hero-actions { display:flex; gap:14px; flex-wrap:wrap; }
+  .portrait-wrap {}
+  .portrait-ph { aspect-ratio:4/5; width:100%; }
+  .portrait-cap { margin-top:14px; padding-top:14px; border-top:1px solid var(--rule); }
+  .portrait-name { font-family:var(--serif); font-size:16px; color:var(--ink); display:block; margin-bottom:4px; }
+  .portrait-meta { font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); line-height:1.6; }
+
+  /* stat bar */
+  .stat-bar { display:grid; grid-template-columns:1fr auto 1fr auto 1fr auto 1fr; align-items:center; border-top:2px solid var(--ink); border-bottom:1px solid var(--rule); padding:32px 0; }
+  .stat-item { padding:0 32px; }
+  .stat-item:first-child { padding-left:0; }
+  .stat-item:last-child { padding-right:0; }
+  .stat-num { font-family:var(--serif); font-size:clamp(32px,4vw,52px); font-weight:700; letter-spacing:-0.03em; color:var(--ink); display:block; line-height:1; }
+  .stat-unit { font-size:0.45em; color:var(--ink-3); font-weight:400; }
+  .stat-label { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); margin-top:6px; display:block; line-height:1.5; }
+  .stat-div { width:1px; height:48px; background:var(--rule); }
+
+  /* proof strip */
+  .proof-strip { background:var(--paper-2); border-bottom:1px solid var(--rule); padding:16px 0; }
+  .proof-row { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+  .proof-label { font-family:var(--mono); font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); flex-shrink:0; }
+  .proof-items { display:flex; align-items:center; gap:14px; flex-wrap:wrap; font-family:var(--serif); font-size:15px; color:var(--ink-2); }
+  .proof-sep { color:var(--rule); }
+
+  /* ============================================================
+     MANIFESTO
+  ============================================================ */
+  .manifesto-section { border-left:0; }
+  .manifesto-inner { display:grid; grid-template-columns:1fr; gap:56px; padding-left:32px; border-left:4px solid var(--orange); }
+  .manifesto-head .section-h2 { margin-top:12px; }
+  .contrast { display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid var(--rule); margin-top:8px; }
+  .contrast-col { padding:32px 32px 32px 0; }
+  .contrast-col + .contrast-col { padding:32px 0 32px 32px; border-left:1px solid var(--rule); }
+  .contrast-label { font-family:var(--mono); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-3); margin-bottom:18px; }
+  .contrast-label-new { color:var(--orange); }
+  .contrast-list { list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+  .contrast-list li { font-size:15px; line-height:1.55; color:var(--ink-2); padding-left:20px; position:relative; }
+  .contrast-old .contrast-list li::before { content:'—'; position:absolute; left:0; color:var(--ink-3); }
+  .contrast-new .contrast-list li::before { content:'✓'; position:absolute; left:0; color:var(--orange); font-weight:700; }
+
+  /* ============================================================
+     PRICING — dark
+  ============================================================ */
+  .section-head-centered { text-align:center; margin-bottom:56px; }
+  .tiers { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.08); margin-bottom:24px; }
+  .tier { background:#242018; padding:36px 32px; display:flex; flex-direction:column; }
+  .tier-hot { background:#1A1714; border:1px solid var(--orange); position:relative; margin:-1px; z-index:1; }
+  .tier-head-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+  .tier-num { font-family:var(--mono); font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6258; }
+  .tier-tag { font-family:var(--mono); font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:#6B6258; border:1px solid #3A332C; padding:3px 8px; border-radius:2px; }
+  .tier-tag-hot { background:var(--orange); color:#fff; border-color:var(--orange); }
+  .tier-name { font-family:var(--serif); font-size:clamp(28px,3vw,42px); font-weight:600; letter-spacing:-0.025em; line-height:1; color:#F4EFE7; margin-bottom:14px; }
+  .tier-pitch { font-size:14px; color:#8A8073; line-height:1.6; margin-bottom:24px; flex-grow:1; }
+  .tier-price-row { margin-bottom:24px; padding-bottom:24px; border-bottom:1px solid #2D2620; }
+  .tier-price { font-family:var(--serif); font-size:38px; font-weight:700; letter-spacing:-0.03em; color:#F4EFE7; display:block; line-height:1; }
+  .tier-per { font-size:20px; color:#6B6258; font-weight:400; }
+  .tier-terms { font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:#6B6258; display:block; margin-top:6px; }
+  .tier-list { list-style:none; padding:0; margin:0 0 28px; display:grid; gap:10px; }
+  .tier-list li { font-size:13.5px; color:#9A9080; line-height:1.5; padding-left:18px; position:relative; }
+  .tier-list li::before { content:'→'; position:absolute; left:0; color:var(--orange); font-size:12px; }
+  .tier-btn { display:block; text-align:center; padding:12px 20px; border-radius:4px; font-size:14px; font-weight:500; text-decoration:none; margin-top:auto; transition:all .15s; font-family:var(--sans); }
+  .tier-btn-ghost { background:transparent; color:#C8C4BF; border:1.5px solid #3A332C; }
+  .tier-btn-ghost:hover { border-color:#C8C4BF; }
+  .tier-btn-orange { background:var(--orange); color:#fff; border:1.5px solid var(--orange); }
+  .tier-btn-orange:hover { background:var(--orange-dk); }
+  .tiers-footnote { font-family:var(--mono); font-size:11px; letter-spacing:0.06em; color:#6B6258; text-align:center; }
+
+  /* ============================================================
+     DIAGNOSTIC
+  ============================================================ */
+  .diag-wrap { display:grid; grid-template-columns:1fr 1.3fr; gap:72px; align-items:start; }
+  .diag-sub { font-size:15px; color:#8A8073; line-height:1.65; margin-top:20px; max-width:42ch; }
+  .diag-progress-wrap { margin-top:32px; }
+  .diag-bar-track { height:2px; background:#2D2620; position:relative; margin-bottom:8px; }
+  .diag-bar-track span { position:absolute; left:0; top:0; bottom:0; background:var(--orange); transition:width .4s cubic-bezier(.6,0,.2,1); }
+  .diag-card { background:#1A1714; border:1px solid #2D2620; padding:36px; min-height:380px; }
+  :global(.q-num) { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6258; margin-bottom:12px; }
+  :global(.q-text) { font-family:var(--serif); font-size:24px; font-weight:500; letter-spacing:-0.01em; line-height:1.25; margin-bottom:24px; color:#F4EFE7; }
+  :global(.q-opts) { display:grid; gap:8px; }
+  :global(.q-opt) { width:100%; text-align:left; padding:14px 18px; background:transparent; border:1px solid #2D2620; color:#C8C4BF; font-family:var(--sans); font-size:14.5px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:all .15s; border-radius:2px; }
+  :global(.q-opt:hover) { background:rgba(194,81,26,0.08); border-color:var(--orange); color:#F4EFE7; }
+  :global(.q-key) { font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; color:#6B6258; margin-left:14px; flex-shrink:0; }
+  :global(.q-opt:hover .q-key) { color:var(--orange); }
+  :global(.diag-result) { animation:fadeUp .4s ease; }
+  :global(@keyframes fadeUp) { from{opacity:0;transform:translateY(8px);} to{opacity:1;transform:none;} }
+  :global(.result-eyebrow) { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--orange); margin-bottom:12px; }
+  :global(.result-h) { font-family:var(--serif); font-size:26px; font-weight:600; letter-spacing:-0.01em; line-height:1.2; margin-bottom:12px; color:#F4EFE7; }
+  :global(.result-body) { color:#9A9080; font-size:14.5px; line-height:1.65; margin-bottom:20px; }
+  :global(.result-rec) { border-top:1px solid #2D2620; padding-top:20px; }
+  :global(.result-rec-label) { font-family:var(--mono); font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:#6B6258; margin-bottom:6px; }
+  :global(.result-rec-name) { font-family:var(--serif); font-size:20px; color:#F4EFE7; }
+  :global(.result-rec-name b) { color:var(--orange); font-weight:400; font-style:italic; }
+
+  /* ============================================================
+     FIT
+  ============================================================ */
+  .fit-section { background:var(--paper); }
+  .fit-head { margin-bottom:56px; }
+  .fit-grid { display:grid; grid-template-columns:1.6fr 1fr; border-top:2px solid var(--ink); }
+  .fit-yes { padding:40px 48px 40px 0; border-right:1px solid var(--rule); }
+  .fit-no { padding:40px 0 40px 48px; }
+  .fit-col-label { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); margin-bottom:24px; display:block; }
+  .fit-col-label-no { color:var(--ink-3); }
+  .fit-list { list-style:none; padding:0; margin:0; display:grid; gap:16px; }
+  .fit-list li { font-family:var(--serif); font-size:18px; line-height:1.4; letter-spacing:-0.005em; color:var(--ink); padding-left:26px; position:relative; }
+  .fit-list li::before { content:'✓'; position:absolute; left:0; top:2px; color:var(--orange); font-family:var(--sans); font-weight:700; font-size:14px; }
+  .fit-list-no li { color:var(--ink-3); font-style:italic; }
+  .fit-list-no li::before { content:'×'; color:var(--ink-3); }
+
+  /* ============================================================
+     GLEN
+  ============================================================ */
+  .glen-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:72px; align-items:start; }
+  .glen-ph { aspect-ratio:4/5; width:100%; background:repeating-linear-gradient(135deg,rgba(255,255,255,0.03) 0 2px,transparent 2px 14px),#242018; border:1px solid #2D2620; color:#4A4744; }
+  .glen-body { font-size:15.5px; color:#9A9080; line-height:1.75; margin-top:20px; }
+  .glen-tags { display:flex; gap:8px; margin-top:28px; flex-wrap:wrap; }
+  .glen-tag { font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; border:1px solid #3A332C; color:#6B6258; padding:5px 12px; border-radius:2px; }
+  .glen-actions { display:flex; gap:14px; margin-top:28px; flex-wrap:wrap; }
+
+  /* ============================================================
+     ORANGE CTA
+  ============================================================ */
+  .cta-orange { background:var(--orange); }
+  .cta-inner { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+  .cta-h2 { font-family:var(--serif); font-size:clamp(42px,5.5vw,80px); font-weight:700; letter-spacing:-0.03em; line-height:0.98; color:#fff; margin:16px 0 20px; }
+  .cta-sub { font-family:var(--serif); font-size:18px; line-height:1.6; color:rgba(255,255,255,0.7); max-width:46ch; }
+  .cta-actions { display:flex; flex-direction:column; gap:14px; align-items:flex-start; }
+  .cta-badges { font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.45); display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; }
+
+  /* ============================================================
+     Responsive
+  ============================================================ */
+  @media (max-width:1000px) {
+    .hero-grid { grid-template-columns:1fr; gap:48px; }
+    .hero-right { order:-1; max-width:360px; }
+    .stat-bar { grid-template-columns:1fr 1fr; row-gap:28px; }
+    .stat-div { display:none; }
+    .manifesto-inner { padding-left:20px; }
+    .contrast { grid-template-columns:1fr; }
+    .contrast-col { padding:28px 0 !important; border-left:none !important; border-top:1px solid var(--rule); }
+    .contrast-col:first-child { border-top:none; }
+    .tiers { grid-template-columns:1fr; }
+    .tier-hot { margin:0; }
+    .diag-wrap { grid-template-columns:1fr; gap:40px; }
+    .fit-grid { grid-template-columns:1fr; border-top:2px solid var(--ink); }
+    .fit-yes { padding:32px 0; border-right:none; border-bottom:1px solid var(--rule); }
+    .fit-no { padding:32px 0; }
+    .glen-grid { grid-template-columns:1fr; gap:40px; }
+    .cta-inner { grid-template-columns:1fr; gap:40px; }
+    .cta-actions { flex-direction:row; flex-wrap:wrap; }
+  }
+  @media (max-width:640px) {
+    .wrap { padding:0 20px; }
+    .section { padding:64px 0; }
+    .hero { padding-top:48px; }
+    .stat-bar { grid-template-columns:1fr 1fr; }
+  }
+</style>
