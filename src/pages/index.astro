@@ -14,9 +14,7 @@ const schema = {
     "addressRegion": "TX",
     "addressCountry": "US"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 33.0198, "longitude": -96.6989 },
-  "areaServed": ["Plano TX", "Dallas TX", "DFW", "United States"],
-  "serviceType": ["Fractional CRO", "RevOps Consulting", "HubSpot Consulting"]
+  "areaServed": ["Plano TX", "Dallas TX", "DFW", "United States"]
 };
 ---
 
@@ -25,143 +23,279 @@ const schema = {
   description="OrangeCore Group delivers fractional CRO and RevOps consulting for B2B SaaS and fintech companies. Fixed-fee engagements. Real deliverables. Based in Plano, TX."
   schema={schema}
 >
-  <section class="hero">
-    <div class="hero-bg-circle c1"></div>
-    <div class="hero-bg-circle c2"></div>
-    <div class="container hero-inner">
-      <div class="eyebrow hero-eyebrow">Fractional CRO & RevOps · Plano, TX</div>
-      <h1>Fractional CRO and RevOps Consulting for B2B SaaS and Fintech</h1>
-      <p class="hero-sub">Fixed scope. Fixed price. Real deliverables — not a slide deck and an open-ended retainer. OrangeCore works with B2B SaaS and fintech companies that need CRO-level thinking without the $250K salary.</p>
-      <div class="hero-actions">
-        <a href="/contact/" class="btn-primary">Book a discovery call</a>
-        <a href="/services/" class="btn-hero-outline">See services & pricing</a>
+
+  <!-- HERO -->
+  <header class="hero-wrap">
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <div class="hero-meta">
+          <span class="tag"><span class="dot"></span>Booking · Q3 2026</span>
+          <span class="meta-text">Plano, TX · Serving clients nationwide</span>
+        </div>
+        <h1 class="display hero-h1">
+          A fractional CRO<br>
+          <em class="accent-ital">who actually ships</em> —<br>
+          on a fixed price,<br>
+          with a fixed end date.
+        </h1>
+        <p class="lede hero-lede">
+          OrangeCore is a one-person revenue practice for B2B SaaS and fintech operators
+          who are tired of consultants billing by the hour and leaving with the playbook.
+          Fixed scope. Fixed price. Real deliverables — yours to keep.
+        </p>
+        <div class="hero-cta">
+          <a href="#diagnostic" class="btn btn-primary">Take the 90-second diagnostic <span class="arr">→</span></a>
+          <a href="/services/" class="btn btn-ghost">See pricing & scope</a>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Years revenue leadership</span></div>
-        <div class="stat"><span class="stat-num">$0</span><span class="stat-label">Hourly billing, ever</span></div>
-        <div class="stat"><span class="stat-num">14</span><span class="stat-label">Day avg. delivery</span></div>
+
+      <aside class="hero-right">
+        <figure class="portrait">
+          <div class="ph portrait-ph">
+            Glen — portrait<br><span style="font-size:10px;">(replace src)</span>
+          </div>
+          <figcaption>
+            <div class="portrait-name">Glen <em class="accent-ital">— Founder, Fractional CRO</em></div>
+            <div class="portrait-meta">U.S. Army Veteran · 10+ yrs revenue leadership · B2B SaaS & Fintech</div>
+          </figcaption>
+        </figure>
+      </aside>
+    </div>
+
+    <div class="wrap">
+      <div class="ledger">
+        <div>
+          <div class="k">Engagement</div>
+          <div class="v">14 <span class="v-sub">days</span></div>
+          <div class="sub">Average delivery, end to end</div>
+        </div>
+        <div>
+          <div class="k">Billing</div>
+          <div class="v">$0<span class="v-sub">/hr</span></div>
+          <div class="sub">No hourly. No retainers. No surprises.</div>
+        </div>
+        <div>
+          <div class="k">ARR secured</div>
+          <div class="v">$67M<span class="v-sub">+</span></div>
+          <div class="sub">Across SaaS, fintech, and payments</div>
+        </div>
+        <div>
+          <div class="k">Avg ARR lift</div>
+          <div class="v">22<span class="v-sub">%</span></div>
+          <div class="sub">Across 10+ delivered engagements</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <hr class="rule" />
+
+  <!-- PROOF STRIP -->
+  <section class="proof-strip">
+    <div class="wrap proof-row">
+      <span class="eyebrow">Past engagements</span>
+      <div class="proof-logos">
+        <span>Enterprise Fintech</span>
+        <span class="sep">·</span>
+        <span>Global Payments</span>
+        <span class="sep">·</span>
+        <span>B2B SaaS</span>
+        <span class="sep">·</span>
+        <span>Government Finance</span>
+        <span class="sep">·</span>
+        <span>eCommerce</span>
       </div>
     </div>
   </section>
 
-  <section class="cred-strip fade-in">
-    <div class="container">
-      <p class="cred-label">Past clients & engagements</p>
-      <div class="cred-logos">
-        <span class="cred-item">Verifone</span>
-        <span class="cred-sep">·</span>
-        <span class="cred-item">Bread Financial</span>
-        <span class="cred-sep">·</span>
-        <span class="cred-item">Sunset Pool Care</span>
-        <span class="cred-sep">·</span>
-        <span class="cred-item">B2B SaaS & Fintech</span>
-      </div>
-      <div class="cred-badges">
-        <span class="cred-badge">SDVOSB Certified</span>
-        <span class="cred-badge">U.S. Army Veteran</span>
-        <span class="cred-badge">AI-Augmented Delivery</span>
-      </div>
-    </div>
-  </section>
+  <hr class="rule" />
 
-  <section class="section services-overview">
-    <div class="container">
-      <div class="section-header fade-in">
-        <p class="eyebrow">What we do</p>
-        <h2>Three ways to work together</h2>
-        <p>Every engagement has a defined scope and a defined end. You'll know exactly what you're getting before anything gets signed.</p>
+  <!-- MANIFESTO -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">01 — The thesis</span>
+        <h2 class="display sec-h2">
+          Most fractional CROs sell <em class="accent-ital">strategy</em>.<br>
+          We sell <em class="accent-ital">finished work</em>.
+        </h2>
       </div>
-      <div class="svc-grid">
-        <a href="/services/#foundation" class="svc-card card-hover fade-in">
-          <div>
-            <p class="svc-tier">Tier 1</p>
-            <h3 class="svc-name">Foundation</h3>
-            <p class="svc-desc">Something feels off but nobody can agree on what. This tells you exactly what's broken and what to fix first.</p>
-          </div>
-          <div class="svc-foot">
-            <span class="svc-price">$5,500</span>
-            <span class="svc-note">One-time · 10 business days</span>
-          </div>
-        </a>
-        <a href="/services/#operate" class="svc-card svc-card--featured card-hover fade-in">
-          <div class="svc-badge">Most popular</div>
-          <div>
-            <p class="svc-tier">Ongoing</p>
-            <h3 class="svc-name">Operate</h3>
-            <p class="svc-desc">A fractional CRO in the room every month — defined deliverables, not a standing check-in you dread scheduling.</p>
-          </div>
-          <div class="svc-foot">
-            <span class="svc-price">$7,500<span class="svc-mo">/mo</span></span>
-            <span class="svc-note">3-month minimum</span>
-          </div>
-        </a>
-        <a href="/services/#build" class="svc-card card-hover fade-in">
-          <div>
-            <p class="svc-tier">Project</p>
-            <h3 class="svc-name">Build</h3>
-            <p class="svc-desc">The full engagement. We go in, build it right, hand it off clean. No loose ends, no "let's revisit next quarter."</p>
-          </div>
-          <div class="svc-foot">
-            <span class="svc-price">$14,500</span>
-            <span class="svc-note">One-time · 3–4 weeks</span>
-          </div>
-        </a>
-      </div>
-      <p class="svc-note fade-in">All engagements are AI-augmented — faster delivery, more consistent output, better results. Not a gimmick; it's how we move at project speed on a consultant budget. <a href="/services/">Full pricing →</a></p>
-    </div>
-  </section>
 
-  <section class="position-section fade-in">
-    <div class="container">
-      <p class="eyebrow">Why this isn't traditional consulting</p>
-      <div class="compare-grid">
-        <div class="compare-col compare-old">
-          <h3>Traditional fractional CRO / RevOps</h3>
-          <ul class="compare-list">
-            <li>Hourly or day-rate billing. Budget creep is a feature, not a bug.</li>
+      <div class="contrast">
+        <div class="contrast-col contrast-old">
+          <div class="contrast-label">Traditional fractional CRO / RevOps</div>
+          <ul>
+            <li>Hourly or day-rate billing — budget creep is the business model.</li>
             <li>Weeks of "discovery" before anything actually gets built.</li>
             <li>Vague deliverables. "Strategic guidance." Hard to measure ROI.</li>
-            <li>When they leave, so does the knowledge.</li>
-            <li>Scope expands every month. The engagement never ends.</li>
+            <li>When they leave, the institutional knowledge leaves with them.</li>
+            <li>Scope quietly expands. The engagement never really ends.</li>
           </ul>
         </div>
-        <div class="compare-col compare-new">
-          <h3>OrangeCore productized service</h3>
-          <ul class="compare-list">
-            <li>Flat fee. You know the number before we start. No surprises.</li>
+        <div class="contrast-col contrast-new">
+          <div class="contrast-label">
+            <span class="brand-dot"></span>
+            OrangeCore productized service
+          </div>
+          <ul>
+            <li>Flat fee. You see the number before you sign anything.</li>
             <li>Structured intake on day one. Building starts in week one.</li>
-            <li>Specific deliverables, documented and handed off. It's yours.</li>
+            <li>Specific deliverables, documented and handed off — yours to keep.</li>
             <li>Everything lives in your systems when we're done. Not ours.</li>
-            <li>Defined end date. Retainer is optional — never required.</li>
+            <li>Defined end date. Retainer is optional, never required.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section fit-dark fade-in">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow" style="color:var(--orange)">Who this works for</p>
-        <h2 style="color:#fff">This might be the right fit if...</h2>
+  <!-- THREE TIERS -->
+  <section class="section section-band" id="pricing">
+    <div class="wrap">
+      <div class="sec-head sec-centered">
+        <span class="eyebrow">02 — Three ways to work together</span>
+        <h2 class="display sec-h2">
+          Pick a scope.<br>
+          <em class="accent-ital">Know the price.</em> Know the date.
+        </h2>
+        <p class="lede" style="max-width:640px;margin:18px auto 0;">
+          Every engagement has a defined scope and a defined end. You'll know exactly
+          what you're getting before anything gets signed.
+        </p>
       </div>
-      <div class="fit-grid">
-        <div class="fit-yes">
+
+      <div class="tiers">
+        <article class="tier">
+          <div class="tier-head">
+            <span class="tier-num">Tier 01</span>
+            <span class="tier-stamp">Diagnostic</span>
+          </div>
+          <h3 class="tier-name display">Foundation</h3>
+          <p class="tier-pitch">
+            Something feels off but nobody can agree on what.
+            We tell you exactly what's broken and what to fix first.
+          </p>
+          <div class="tier-price">
+            <span class="amt">$5,500</span>
+            <span class="terms">One-time · 10 business days</span>
+          </div>
+          <ul class="tier-bullets">
+            <li>Full revenue ops audit — pipeline, CRM, ICP, handoff</li>
+            <li>Gap analysis with prioritized fix list</li>
+            <li>90-day RevOps roadmap, ready to execute</li>
+            <li>CRM health scorecard + 60-min readout</li>
+          </ul>
+          <a href="/services/#foundation" class="btn btn-ghost tier-cta">See what's included <span class="arr">→</span></a>
+        </article>
+
+        <article class="tier tier-featured">
+          <div class="tier-head">
+            <span class="tier-num">Tier 02</span>
+            <span class="tier-stamp tier-stamp-hot">Most chosen</span>
+          </div>
+          <h3 class="tier-name display">Operate</h3>
+          <p class="tier-pitch">
+            A fractional CRO in the room every month — defined deliverables,
+            not a standing check-in you dread scheduling.
+          </p>
+          <div class="tier-price">
+            <span class="amt">$7,500<span class="per">/mo</span></span>
+            <span class="terms">3-month minimum</span>
+          </div>
+          <ul class="tier-bullets">
+            <li>Monthly pipeline review + forecast with leadership</li>
+            <li>One major deliverable per month, defined at kickoff</li>
+            <li>Ongoing CRM management and data hygiene</li>
+            <li>Bi-weekly team coaching + async Slack access</li>
+          </ul>
+          <a href="/services/#operate" class="btn btn-primary tier-cta">See what's included <span class="arr">→</span></a>
+        </article>
+
+        <article class="tier">
+          <div class="tier-head">
+            <span class="tier-num">Tier 03</span>
+            <span class="tier-stamp">Project</span>
+          </div>
+          <h3 class="tier-name display">Build</h3>
+          <p class="tier-pitch">
+            The full engagement. We go in, build it right, hand it off clean.
+            No loose ends, no "let's revisit next quarter."
+          </p>
+          <div class="tier-price">
+            <span class="amt">$14,500</span>
+            <span class="terms">One-time · 3–4 weeks</span>
+          </div>
+          <ul class="tier-bullets">
+            <li>Full CRM buildout or cleanup (HubSpot, Salesforce)</li>
+            <li>Pipeline stages, ICP definition, lead scoring</li>
+            <li>Sales playbook + reporting dashboards</li>
+            <li>30-day Slack support post-delivery</li>
+          </ul>
+          <a href="/services/#build" class="btn btn-ghost tier-cta">See what's included <span class="arr">→</span></a>
+        </article>
+      </div>
+
+      <p class="tiers-foot eyebrow" style="text-align:center;margin-top:2.5rem;">
+        All engagements are AI-augmented — faster delivery, more consistent output.
+        Not a gimmick; it's how we move at project speed on a consultant budget.
+      </p>
+    </div>
+  </section>
+
+  <!-- DIAGNOSTIC QUIZ -->
+  <section class="section section-dark" id="diagnostic">
+    <div class="wrap diag-wrap">
+      <div class="diag-head">
+        <span class="eyebrow">03 — Live diagnostic</span>
+        <h2 class="display diag-h2">
+          Four questions.<br>
+          <em class="accent-ital">Ninety seconds.</em><br>
+          A real read on your revenue function.
+        </h2>
+        <p class="lede" style="color:#C9C0B2;margin-top:1rem;max-width:52ch;">
+          No email gate. No download. An honest signal of where you sit
+          on the curve — and which tier (if any) is the right fit.
+        </p>
+        <div class="diag-progress">
+          <div class="diag-bar"><span id="diag-fill" style="width:0%"></span></div>
+          <span class="eyebrow" id="diag-step-label">Question 1 of 4</span>
+        </div>
+      </div>
+      <div class="diag-body">
+        <div id="diag-questions"></div>
+        <div id="diag-result" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIT -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">04 — Who this is for</span>
+        <h2 class="display sec-h2">
+          Worth a conversation if<br>
+          <em class="accent-ital">any of these sound familiar.</em>
+        </h2>
+      </div>
+      <div class="fit">
+        <div class="fit-col">
+          <h4 class="fit-label">Probably a fit</h4>
           <ul class="fit-list">
-            <li>Revenue is inconsistent — good months, bad months, no real explanation for either.</li>
+            <li>Revenue is inconsistent — good months, bad months, no real explanation.</li>
             <li>Your CRM is a graveyard. The team knows it's wrong so they stopped using it.</li>
             <li>Sales and marketing can't agree on what a qualified lead looks like.</li>
-            <li>You're heading into a board meeting and the pipeline story isn't airtight.</li>
-            <li>You need CRO-level thinking but $250K in salary isn't happening right now.</li>
+            <li>Board meeting incoming and the pipeline story isn't airtight.</li>
+            <li>You need CRO-level thinking but $250K in salary isn't in the budget.</li>
             <li>You're in fintech, payments, or B2B SaaS and tired of generalists who don't know the space.</li>
           </ul>
         </div>
-        <div class="fit-no">
-          <h3>Probably not a fit if...</h3>
-          <ul class="fit-list fit-no-list">
-            <li>You're pre-revenue and still figuring out if anyone wants what you're selling.</li>
+        <div class="fit-col fit-no">
+          <h4 class="fit-label">Probably not</h4>
+          <ul class="fit-list">
+            <li>Pre-revenue, still figuring out if anyone wants what you're selling.</li>
             <li>You need a day-to-day sales manager. That's a hire, not a consultant.</li>
-            <li>You want someone to sit in meetings and give general advice.</li>
+            <li>You want someone in meetings giving general advice with no defined output.</li>
             <li>You're not comfortable letting someone see the real numbers.</li>
           </ul>
         </div>
@@ -169,79 +303,395 @@ const schema = {
     </div>
   </section>
 
-  <section class="section-sm">
-    <div class="container">
-      <div class="footer-cta-banner fade-in">
-        <p class="eyebrow">Based in Plano, TX · Serving clients nationwide</p>
-        <h2>Not sure where to start?</h2>
-        <p>30 minutes. No pitch deck, no pressure. We'll figure out together if this makes sense — and if it doesn't, you'll hear that too.</p>
-        <a href="/contact/" class="btn-primary">Book a discovery call</a>
+  <!-- GLEN SECTION -->
+  <section class="section section-band">
+    <div class="wrap">
+      <div class="glen-grid">
+        <div class="glen-img">
+          <div class="ph" style="aspect-ratio:4/5;width:100%;">
+            Glen — working portrait<br><span style="font-size:10px;">(replace src)</span>
+          </div>
+        </div>
+        <div class="glen-text">
+          <span class="eyebrow">05 — The person you're hiring</span>
+          <h2 class="display glen-h2">
+            You're not hiring<br>a firm.<br>
+            <em class="accent-ital">You're hiring me.</em>
+          </h2>
+          <p class="lede glen-lede">
+            I'm Glen. U.S. Army veteran, ten-plus years leading revenue across
+            enterprise fintech, global payments, and B2B SaaS. I built OrangeCore
+            because the consulting industry sells PowerPoint and calls it strategy.
+            You deserve finished work.
+          </p>
+          <p style="font-size:15px;color:var(--ink-2);line-height:1.7;margin-top:1rem;">
+            When we work together, I'm the one in your CRM. I'm the one writing the
+            playbook. I'm the one on the call with your VP of Sales. No account team,
+            no junior associate, no handoff — just me, the work, and a defined end date.
+          </p>
+          <div style="display:flex;gap:12px;margin-top:2rem;flex-wrap:wrap;">
+            <a href="/about/" class="btn btn-ghost">More about Glen <span class="arr">→</span></a>
+            <a href="/contact/" class="btn btn-primary">Book a discovery call</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- FOOTER CTA -->
+  <section class="section section-dark">
+    <div class="wrap cta-wrap">
+      <span class="eyebrow">Based in Plano, TX · Serving clients nationwide</span>
+      <h2 class="display cta-h2">
+        Not sure<br>
+        <em class="accent-ital">where to start?</em>
+      </h2>
+      <p class="lede" style="color:#C9C0B2;max-width:48ch;">
+        30 minutes. No pitch deck, no pressure. We'll figure out together if this
+        makes sense — and if it doesn't, you'll hear that too.
+      </p>
+      <div style="display:flex;gap:12px;margin-top:2rem;flex-wrap:wrap;">
+        <a href="#diagnostic" class="btn btn-primary" style="background:var(--paper);color:var(--ink);">Take the diagnostic first</a>
+        <a href="/contact/" class="btn" style="color:var(--paper);border:1px solid #4D453C;">Book a call directly <span class="arr">→</span></a>
+      </div>
+      <div class="cta-meta eyebrow">
+        <span>SDVOSB Certified</span>
+        <span style="margin:0 1rem;">·</span>
+        <span>Veteran Owned</span>
+        <span style="margin:0 1rem;">·</span>
+        <span>AI-Augmented Delivery</span>
+      </div>
+    </div>
+  </section>
+
 </Base>
 
 <style>
-.hero { background:var(--charcoal); padding:5rem 0 4rem; position:relative; overflow:hidden; text-align:center; }
-.hero-bg-circle { position:absolute; border-radius:50%; background:var(--orange); pointer-events:none; }
-.c1 { width:320px; height:320px; top:-80px; right:-80px; opacity:0.06; }
-.c2 { width:220px; height:220px; bottom:-60px; left:-40px; opacity:0.04; }
-.hero-inner { position:relative; z-index:1; }
-.hero-eyebrow { color:var(--orange); border:1px solid rgba(232,97,10,0.4); padding:4px 14px; border-radius:2px; }
-.hero h1 { font-size:clamp(2rem,5vw,3.4rem); font-weight:700; color:#fff; line-height:1.12; letter-spacing:-0.03em; max-width:800px; margin:1rem auto 1.25rem; }
-.hero-sub { font-size:17px; color:#9A9590; max-width:580px; margin:0 auto 2.5rem; font-weight:300; line-height:1.7; }
-.hero-actions { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; margin-bottom:3rem; }
-.btn-hero-outline { display:inline-block; background:transparent; color:#C8C4BF; padding:12px 28px; border-radius:4px; font-size:14px; font-weight:500; border:1.5px solid rgba(255,255,255,0.15); transition:border-color var(--transition-fast),color var(--transition-fast); }
-.btn-hero-outline:hover { border-color:rgba(255,255,255,0.4); color:#fff; }
-.hero-stats { display:flex; justify-content:center; gap:3.5rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.08); flex-wrap:wrap; }
-.stat { text-align:center; }
-.stat-num { font-family:var(--font-serif); font-size:2.2rem; font-weight:700; color:#fff; display:block; }
-.stat-label { font-size:12px; color:#6E6A65; text-transform:uppercase; letter-spacing:0.08em; }
-.cred-strip { background:var(--white); border-bottom:1px solid var(--border); padding:1.75rem 0; text-align:center; }
-.cred-label { font-size:11px; text-transform:uppercase; letter-spacing:0.1em; color:var(--mid-gray); margin-bottom:0.75rem; }
-.cred-logos { display:flex; justify-content:center; align-items:center; gap:1rem; flex-wrap:wrap; margin-bottom:0.75rem; }
-.cred-item { font-family:var(--font-serif); font-size:15px; font-weight:500; color:var(--charcoal); }
-.cred-sep { color:var(--border); }
-.cred-badges { display:flex; justify-content:center; gap:0.5rem; flex-wrap:wrap; }
-.cred-badge { font-size:10px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; border:1px solid var(--border); color:var(--mid-gray); padding:3px 10px; border-radius:2px; }
-.svc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin-bottom:2rem; }
-.svc-card { background:var(--white); border:1px solid var(--border); border-radius:6px; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between; position:relative; text-decoration:none; color:inherit; }
-.svc-card--featured { border:2px solid var(--orange); }
-.svc-badge { position:absolute; top:-1px; right:20px; background:var(--orange); color:#fff; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; padding:4px 12px; border-radius:0 0 4px 4px; }
-.svc-tier { font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--mid-gray); margin-bottom:0.4rem; }
-.svc-name { font-family:var(--font-serif); font-size:1.5rem; font-weight:700; color:var(--charcoal); margin-bottom:0.5rem; }
-.svc-desc { font-size:13.5px; color:var(--mid-gray); line-height:1.6; }
-.svc-foot { margin-top:1.5rem; padding-top:1.25rem; border-top:1px solid var(--border); }
-.svc-price { font-family:var(--font-serif); font-size:2rem; font-weight:700; color:var(--charcoal); display:block; }
-.svc-mo { font-size:1.1rem; font-weight:400; }
-.svc-note { font-size:12px; color:var(--mid-gray); display:block; }
-.svc-note { text-align:center; font-size:14px; color:var(--mid-gray); line-height:1.7; }
-.svc-note a { color:var(--orange); font-weight:500; }
-.svc-note a:hover { text-decoration:underline; }
-.position-section { background:var(--orange-light); border-top:1px solid var(--orange-mid); border-bottom:1px solid var(--orange-mid); padding:3rem 0; }
-.compare-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:1.5rem; }
-.compare-col h3 { font-family:var(--font-sans); font-size:12px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; padding-bottom:0.5rem; border-bottom:1px solid var(--border); margin-bottom:1rem; }
-.compare-old h3 { color:var(--mid-gray); }
-.compare-new h3 { color:var(--green); }
-.compare-list { list-style:none; display:flex; flex-direction:column; gap:0.6rem; }
-.compare-list li { font-size:13.5px; line-height:1.55; padding-left:1.25rem; position:relative; }
-.compare-old .compare-list li { color:#7A7570; }
-.compare-old .compare-list li::before { content:'—'; position:absolute; left:0; color:#B0ACA7; }
-.compare-new .compare-list li { color:var(--charcoal); }
-.compare-new .compare-list li::before { content:'✓'; position:absolute; left:0; color:var(--green); font-weight:600; }
-.fit-dark { background:var(--charcoal); }
-.fit-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; }
-.fit-yes h3, .fit-no h3 { font-family:var(--font-serif); font-size:1.1rem; font-weight:700; margin-bottom:1rem; }
-.fit-yes h3 { color:#4DC994; }
-.fit-no h3 { color:#6E6A65; }
-.fit-list { list-style:none; display:flex; flex-direction:column; }
-.fit-list li { font-size:13.5px; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.06); line-height:1.5; display:flex; gap:10px; align-items:flex-start; color:#C8C4BF; }
-.fit-list li::before { content:'✓'; color:#4DC994; flex-shrink:0; margin-top:1px; }
-.fit-no-list li { color:#5A5653; }
-.fit-no-list li::before { content:'—'; color:#4A4744; }
-.fit-list li:last-child { border-bottom:none; }
-@media (max-width:768px) {
-  .svc-grid,.compare-grid,.fit-grid { grid-template-columns:1fr; }
-  .hero-stats { gap:2rem; }
-}
+  /* ============================================================
+     Design system — warm advisory / editorial
+     ============================================================ */
+  :root {
+    --paper:      #F4EFE7;
+    --paper-2:    #EBE4D7;
+    --paper-3:    #E2D9C8;
+    --ink:        #1A1714;
+    --ink-2:      #3A332C;
+    --ink-3:      #6B6258;
+    --rule:       #C9BFAD;
+    --rule-soft:  #D9D0BE;
+    --accent:     #C2511A;
+    --accent-ink: #8A3810;
+    --serif:      'Source Serif 4', Georgia, serif;
+    --sans:       'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
+    --mono:       'JetBrains Mono', 'IBM Plex Mono', monospace;
+  }
+
+  /* override global body bg with warm paper */
+  :global(body) {
+    background: var(--paper) !important;
+    color: var(--ink) !important;
+    font-family: var(--sans) !important;
+  }
+
+  /* ---------- shared ---------- */
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+  .rule { height:1px; background:var(--rule); border:0; margin:0; }
+  .section { padding: 96px 0; }
+  .section-band { background: var(--paper-2); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+  .section-dark { background: var(--ink); color: var(--paper); }
+  .section-dark .eyebrow { color: #B7AC9C; }
+
+  .display {
+    font-family: var(--serif);
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    line-height: 0.98;
+    color: var(--ink);
+  }
+  .accent-ital { font-style: italic; color: var(--accent); }
+  .lede { font-family: var(--serif); font-size: 21px; line-height: 1.45; color: var(--ink-2); letter-spacing: -0.005em; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+  .meta-text { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.04em; color: var(--ink-3); }
+
+  /* tag pill */
+  .tag { display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border:1px solid var(--rule); border-radius:999px; font-family:var(--mono); font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-2); }
+  .dot { width:6px; height:6px; border-radius:50%; background:var(--accent); flex-shrink:0; }
+
+  /* buttons */
+  .btn { display:inline-flex; align-items:center; gap:10px; padding:13px 20px; border-radius:999px; font-size:14.5px; font-weight:500; border:1px solid transparent; cursor:pointer; transition:all .15s ease; white-space:nowrap; text-decoration:none; font-family:var(--sans); }
+  .btn-primary { background:var(--ink); color:var(--paper); }
+  .btn-primary:hover { background:#000; }
+  .btn-ghost { background:transparent; color:var(--ink); border-color:var(--ink); }
+  .btn-ghost:hover { background:var(--ink); color:var(--paper); }
+  .arr { display:inline-block; transition:transform .2s ease; }
+  .btn:hover .arr { transform:translateX(3px); }
+
+  /* ledger */
+  .ledger { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); margin-top:72px; }
+  .ledger > div { padding:28px 24px; border-right:1px solid var(--rule); }
+  .ledger > div:last-child { border-right:none; }
+  .k { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); margin-bottom:12px; }
+  .v { font-family:var(--serif); font-size:36px; letter-spacing:-0.02em; line-height:1; color:var(--ink); }
+  .v-sub { font-size:22px; color:var(--ink-3); }
+  .sub { font-size:13px; color:var(--ink-3); margin-top:8px; }
+
+  /* placeholder */
+  .ph { background: repeating-linear-gradient(135deg, rgba(26,23,20,0.05) 0 2px, transparent 2px 14px), var(--paper-3); border:1px solid var(--rule); display:grid; place-items:center; color:var(--ink-3); font-family:var(--mono); font-size:12px; letter-spacing:0.1em; text-transform:uppercase; text-align:center; padding:16px; }
+
+  /* HERO */
+  .hero-wrap { padding: 72px 0 0; }
+  .hero-grid { display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px; align-items:start; padding-bottom:72px; }
+  .hero-meta { display:flex; align-items:center; gap:16px; margin-bottom:32px; flex-wrap:wrap; }
+  .hero-h1 { font-size: clamp(42px, 5.5vw, 80px); margin:0 0 28px; }
+  .hero-lede { margin-bottom:32px; max-width:54ch; }
+  .hero-cta { display:flex; gap:12px; flex-wrap:wrap; }
+  .portrait { margin:0; }
+  .portrait-ph { aspect-ratio:4/5; width:100%; }
+  figcaption { margin-top:14px; padding-top:12px; border-top:1px solid var(--rule); }
+  .portrait-name { font-family:var(--serif); font-size:17px; color:var(--ink); margin-bottom:4px; }
+  .portrait-meta { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); line-height:1.6; }
+
+  /* proof strip */
+  .proof-strip { padding:20px 0; }
+  .proof-row { display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+  .proof-logos { display:flex; align-items:center; gap:14px; flex-wrap:wrap; font-family:var(--serif); font-size:16px; color:var(--ink-2); }
+  .sep { color:var(--rule); }
+
+  /* section heads */
+  .sec-head { margin-bottom:56px; max-width:880px; }
+  .sec-centered { text-align:center; margin-left:auto; margin-right:auto; }
+  .sec-h2 { font-size:clamp(38px,4.6vw,64px); letter-spacing:-0.02em; line-height:1.02; margin-top:14px; }
+
+  /* contrast table */
+  .contrast { display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid var(--rule); }
+  .contrast-col { padding:36px 36px 36px 0; }
+  .contrast-col + .contrast-col { padding:36px 0 36px 36px; border-left:1px solid var(--rule); }
+  .contrast-label { font-family:var(--mono); font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-3); margin-bottom:20px; display:flex; align-items:center; gap:8px; }
+  .contrast-old .contrast-label { color:var(--ink-3); }
+  .contrast-new .contrast-label { color:var(--accent); }
+  .brand-dot { display:inline-block; width:12px; height:12px; border-radius:50%; background:var(--accent); flex-shrink:0; }
+  .contrast ul { list-style:none; padding:0; margin:0; display:grid; gap:14px; }
+  .contrast li { font-size:15.5px; color:var(--ink-2); line-height:1.5; padding-left:20px; position:relative; }
+  .contrast-old li::before { content:'—'; position:absolute; left:0; color:var(--ink-3); }
+  .contrast-new li::before { content:'✓'; position:absolute; left:0; color:var(--accent); font-weight:600; }
+
+  /* tiers */
+  .tiers { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); margin-top:48px; }
+  .tier { background:var(--paper-2); padding:36px 32px; display:flex; flex-direction:column; }
+  .tier-featured { background:var(--paper); position:relative; }
+  .tier-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+  .tier-num { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); }
+  .tier-stamp { font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); border:1px solid var(--rule); padding:3px 8px; border-radius:3px; }
+  .tier-stamp-hot { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .tier-name { font-size:clamp(28px,3vw,40px); letter-spacing:-0.02em; line-height:1; margin-bottom:14px; }
+  .tier-pitch { font-size:14.5px; color:var(--ink-2); line-height:1.55; margin-bottom:24px; flex-grow:1; }
+  .tier-price { margin-bottom:24px; padding-bottom:24px; border-bottom:1px solid var(--rule); }
+  .amt { font-family:var(--serif); font-size:36px; letter-spacing:-0.02em; color:var(--ink); display:block; }
+  .per { font-size:20px; color:var(--ink-3); }
+  .terms { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); display:block; margin-top:4px; }
+  .tier-bullets { list-style:none; padding:0; margin:0 0 28px; display:grid; gap:10px; }
+  .tier-bullets li { font-size:14px; color:var(--ink-2); line-height:1.45; padding-left:18px; position:relative; }
+  .tier-bullets li::before { content:'→'; position:absolute; left:0; color:var(--accent); font-size:12px; }
+  .tier-cta { margin-top:auto; }
+
+  /* diagnostic */
+  .diag-wrap { display:grid; grid-template-columns:1fr 1.2fr; gap:64px; align-items:start; }
+  .diag-h2 { font-size:clamp(36px,4vw,58px); letter-spacing:-0.02em; line-height:1.05; margin-top:14px; color:var(--paper); }
+  .diag-progress { margin-top:28px; }
+  .diag-bar { height:2px; background:#2D2620; position:relative; margin-bottom:10px; }
+  .diag-bar span { position:absolute; left:0; top:0; bottom:0; background:var(--accent); transition:width .4s cubic-bezier(.6,0,.2,1); }
+  .diag-body { background:rgba(255,255,255,0.03); border:1px solid #2D2620; padding:36px; min-height:380px; }
+
+  /* diagnostic injected styles */
+  :global(.q-num) { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8073; }
+  :global(.q-text) { font-family:var(--serif); font-size:26px; letter-spacing:-0.01em; line-height:1.2; margin:14px 0 24px; color:var(--paper); }
+  :global(.q-options) { display:grid; gap:10px; }
+  :global(.q-opt) { width:100%; text-align:left; padding:14px 18px; background:transparent; border:1px solid #2D2620; color:var(--paper); font-family:var(--sans); font-size:15px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; transition:background .15s, border-color .15s; }
+  :global(.q-opt:hover) { background:rgba(255,255,255,0.04); border-color:var(--accent); }
+  :global(.q-opt .key) { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:#8A8073; margin-left:14px; }
+  :global(.q-opt:hover .key) { color:var(--accent); }
+  :global(.diag-result) { animation:fadeIn .5s ease; }
+  :global(@keyframes fadeIn) { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+  :global(.diag-result-eyebrow) { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); margin-bottom:14px; }
+  :global(.diag-result-h) { font-family:var(--serif); font-size:28px; line-height:1.15; letter-spacing:-0.01em; margin-bottom:14px; color:var(--paper); }
+  :global(.diag-result-body) { color:#C9C0B2; font-size:15px; line-height:1.65; margin-bottom:24px; }
+  :global(.diag-rec) { border-top:1px solid #2D2620; padding-top:20px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+  :global(.diag-rec-label) { font-family:var(--mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8073; }
+  :global(.diag-rec-name) { font-family:var(--serif); font-size:20px; letter-spacing:-0.01em; color:var(--paper); margin-top:4px; }
+  :global(.diag-rec-name b) { color:var(--accent); font-weight:400; }
+
+  /* fit */
+  .fit { display:grid; grid-template-columns:1.6fr 1fr; gap:0; border-top:1px solid var(--rule); }
+  .fit-col { padding:36px 36px 36px 0; }
+  .fit-col + .fit-col { padding:36px 0 36px 36px; border-left:1px solid var(--rule); }
+  .fit-label { font-family:var(--mono); font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); margin:0 0 24px; font-weight:400; }
+  .fit-list { list-style:none; padding:0; margin:0; display:grid; gap:16px; }
+  .fit-list li { font-family:var(--serif); font-size:18px; line-height:1.4; letter-spacing:-0.005em; color:var(--ink); padding-left:24px; position:relative; }
+  .fit-list li::before { content:'✓'; position:absolute; left:0; top:2px; color:var(--accent); font-family:var(--sans); font-weight:600; }
+  .fit-no .fit-list li { color:var(--ink-3); font-style:italic; }
+  .fit-no .fit-list li::before { content:'×'; color:var(--ink-3); }
+
+  /* glen */
+  .glen-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:64px; align-items:start; }
+  .glen-h2 { font-size:clamp(38px,4.6vw,64px); letter-spacing:-0.02em; line-height:1.02; margin-top:14px; }
+  .glen-lede { margin-top:28px; max-width:52ch; }
+
+  /* footer cta */
+  .cta-wrap { padding:40px 0; }
+  .cta-h2 { font-size:clamp(48px,6vw,88px); max-width:14ch; margin:18px 0 24px; color:var(--paper); }
+  .cta-meta { margin-top:56px; padding-top:28px; border-top:1px solid #2D2620; color:#8A8073; }
+  .section-dark .display { color:var(--paper); }
+
+  /* responsive */
+  @media (max-width: 1000px) {
+    .hero-grid, .glen-grid, .diag-wrap { grid-template-columns:1fr; gap:48px; }
+    .contrast, .fit { grid-template-columns:1fr; }
+    .contrast-col, .fit-col { padding:32px 0 !important; border-left:none !important; border-bottom:1px solid var(--rule); }
+    .tiers { grid-template-columns:1fr; }
+    .ledger { grid-template-columns:repeat(2,1fr); }
+    .ledger > div:nth-child(2) { border-right:none; }
+    .ledger > div:nth-child(1), .ledger > div:nth-child(2) { border-bottom:1px solid var(--rule); }
+  }
+  @media (max-width: 640px) {
+    .hero-h1 { font-size:clamp(36px,10vw,56px); }
+    .section { padding:64px 0; }
+    .wrap { padding:0 20px; }
+  }
 </style>
+
+<script>
+const DIAG_QUESTIONS = [
+  {
+    text: "When was the last time your CRM data could survive a board meeting without an apology?",
+    options: [
+      { label: "Last week — we trust it.", score: 0 },
+      { label: "Last quarter, give or take.", score: 1 },
+      { label: "Honestly? Not in recent memory.", score: 2 },
+      { label: "We don't really use the CRM that way.", score: 3 },
+    ],
+  },
+  {
+    text: "If we asked your sales lead and your marketing lead to define a qualified lead, how close would the answers be?",
+    options: [
+      { label: "Identical. We've documented it.", score: 0 },
+      { label: "Close — same intent, different words.", score: 1 },
+      { label: "They'd argue about it for 20 minutes.", score: 2 },
+      { label: "They'd disagree on what 'lead' even means.", score: 3 },
+    ],
+  },
+  {
+    text: "How predictable is next quarter's pipeline right now?",
+    options: [
+      { label: "Tight forecast, ±5%.", score: 0 },
+      { label: "Reasonable, ±15%.", score: 1 },
+      { label: "It's directional at best.", score: 2 },
+      { label: "We're making decisions on vibes.", score: 3 },
+    ],
+  },
+  {
+    text: "What's your timeline to fix it?",
+    options: [
+      { label: "Yesterday — board meeting incoming.", score: 3 },
+      { label: "Inside the next 30–60 days.", score: 2 },
+      { label: "This year — when bandwidth allows.", score: 1 },
+      { label: "Just exploring for now.", score: 0 },
+    ],
+  },
+];
+
+const RESULTS = [
+  {
+    range: [0, 3],
+    eyebrow: "Healthy revenue function",
+    h: "Your engine is running. Keep it that way.",
+    body: "Honestly — you may not need us right now. If something specific is bothering you, a Foundation diagnostic will surface it in 10 days. Otherwise, save your money.",
+    rec: { name: "Foundation", note: "Optional · only if a specific signal is off" },
+  },
+  {
+    range: [4, 7],
+    eyebrow: "Mild misalignment",
+    h: "There's friction, but you can name it.",
+    body: "You know roughly where the leak is. The right move is a focused build — a HubSpot rebuild, a lead-scoring overhaul, a forecast model — handed off in three to four weeks.",
+    rec: { name: "Build", note: "Recommended · $14,500 · 3–4 weeks" },
+  },
+  {
+    range: [8, 10],
+    eyebrow: "Compounding tax",
+    h: "You're paying for this every month — quietly.",
+    body: "This is where Operate earns its keep. Three months of fractional CRO leadership, hands in the system, board-ready narrative every month.",
+    rec: { name: "Operate", note: "Recommended · $7,500/mo · 3-month minimum" },
+  },
+  {
+    range: [11, 12],
+    eyebrow: "Active emergency",
+    h: "Skip the diagnostic. Pick up the phone.",
+    body: "What you described is a board-meeting-on-Tuesday situation. Foundation in 10 days, then straight into Operate or Build. Let's get on a call this week.",
+    rec: { name: "Foundation → Operate", note: "Urgent · combined engagement" },
+  },
+];
+
+const state = { step: 0, scores: [] };
+
+function renderStep() {
+  const fill = document.getElementById('diag-fill');
+  const label = document.getElementById('diag-step-label');
+  const host = document.getElementById('diag-questions');
+  if (!fill || !label || !host) return;
+  fill.style.width = (state.step / DIAG_QUESTIONS.length * 100) + '%';
+  label.textContent = `Question ${state.step + 1} of ${DIAG_QUESTIONS.length}`;
+  const q = DIAG_QUESTIONS[state.step];
+  host.innerHTML = `
+    <div class="q-num">Q.0${state.step + 1}</div>
+    <div class="q-text">${q.text}</div>
+    <div class="q-options">
+      ${q.options.map((o, i) => `
+        <button class="q-opt" data-score="${o.score}">
+          <span>${o.label}</span>
+          <span class="key">${String.fromCharCode(65 + i)}</span>
+        </button>
+      `).join('')}
+    </div>
+  `;
+  host.querySelectorAll('.q-opt').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.scores.push(parseInt(btn.dataset.score, 10));
+      state.step += 1;
+      if (state.step >= DIAG_QUESTIONS.length) renderResult();
+      else renderStep();
+    });
+  });
+}
+
+function renderResult() {
+  const total = state.scores.reduce((a, b) => a + b, 0);
+  const result = RESULTS.find(r => total >= r.range[0] && total <= r.range[1]) || RESULTS[1];
+  const fill = document.getElementById('diag-fill');
+  const label = document.getElementById('diag-step-label');
+  const host = document.getElementById('diag-questions');
+  fill.style.width = '100%';
+  label.textContent = `Result · score ${total}/12`;
+  host.innerHTML = `
+    <div class="diag-result">
+      <div class="diag-result-eyebrow">${result.eyebrow}</div>
+      <h3 class="diag-result-h">${result.h}</h3>
+      <p class="diag-result-body">${result.body}</p>
+      <div class="diag-rec">
+        <div>
+          <div class="diag-rec-label">Recommended next step</div>
+          <div class="diag-rec-name"><b>${result.rec.name}</b> &nbsp;·&nbsp; ${result.rec.note}</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button id="diag-restart" class="btn" style="color:var(--paper);border:1px solid #4D453C;">Retake</button>
+          <a href="/contact/" class="btn btn-primary" style="background:var(--paper);color:var(--ink);">Book a call →</a>
+        </div>
+      </div>
+    </div>
+  `;
+  document.getElementById('diag-restart')?.addEventListener('click', () => {
+    state.step = 0; state.scores = []; renderStep();
+  });
+}
+
+document.addEventListener('DOMContentLoaded', renderStep);
+</script>
+
